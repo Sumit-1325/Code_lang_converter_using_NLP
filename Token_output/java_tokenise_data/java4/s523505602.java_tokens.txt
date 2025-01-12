@@ -1,0 +1,3 @@
+DecimalInteger "2" line 1, position 1
+DecimalInteger "5" line 2, position 1
+DecimalInteger "5" line 3, position 1
