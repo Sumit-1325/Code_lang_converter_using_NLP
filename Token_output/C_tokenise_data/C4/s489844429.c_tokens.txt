@@ -1,0 +1,456 @@
+COMMENT: // Ver19.03
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: define
+ID: INF
+LPAREN: (
+NUMBER: 1
+NUMBER: 29
+RPAREN: )
+TIMES: *
+NUMBER: 2
+NEWLINE: 
+
+ID: define
+ID: LLINF
+NUMBER: 4545454545454545454
+NEWLINE: 
+
+ID: define
+ID: MOD
+NUMBER: 1000000007
+NEWLINE: 
+
+ID: define
+ID: ll
+ID: long
+ID: long
+NEWLINE: 
+
+ID: define
+ID: ull
+ID: unsigned
+ID: long
+ID: long
+NEWLINE: 
+
+ID: define
+ID: MAX
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: MIN
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: int
+ID: upll
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+ID: return
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: a
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: b
+MINUS: -
+NUMBER: 1
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: a
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: b
+NUMBER: 1
+NUMBER: 0
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: downll
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+ID: return
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: a
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: b
+NUMBER: 1
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: a
+TIMES: *
+LPAREN: (
+ID: ll
+TIMES: *
+RPAREN: )
+ID: b
+MINUS: -
+NUMBER: 1
+NUMBER: 0
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: void
+ID: sortup
+LPAREN: (
+ID: ll
+TIMES: *
+ID: a
+ID: int
+ID: n
+RPAREN: )
+LBRACE: {
+ID: qsort
+LPAREN: (
+ID: a
+ID: n
+ID: sizeof
+LPAREN: (
+ID: ll
+RPAREN: )
+ID: upll
+RPAREN: )
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: void
+ID: sortdown
+LPAREN: (
+ID: ll
+TIMES: *
+ID: a
+ID: int
+ID: n
+RPAREN: )
+LBRACE: {
+ID: qsort
+LPAREN: (
+ID: a
+ID: n
+ID: sizeof
+LPAREN: (
+ID: ll
+RPAREN: )
+ID: downll
+RPAREN: )
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+
+ID: typedef
+ID: struct
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: val
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: ind
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: hoge
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: ssort
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: p
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: hoge
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+ID: val
+ID: q
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: hoge
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+ID: val
+SEMI: ;
+NEWLINE: 
+
+ID: return
+ID: p
+ID: q
+NUMBER: 1
+MINUS: -
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: hoge
+ID: a
+NUMBER: 200005
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: a
+ID: i
+ID: ind
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: a
+ID: i
+ID: val
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: qsort
+LPAREN: (
+ID: a
+ID: n
+ID: sizeof
+LPAREN: (
+ID: hoge
+RPAREN: )
+ID: ssort
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+NUMBER: 0
+ID: ind
+ID: i
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: a
+NUMBER: 0
+ID: val
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: a
+NUMBER: 1
+ID: val
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

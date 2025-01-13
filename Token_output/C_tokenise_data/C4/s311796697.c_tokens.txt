@@ -1,0 +1,266 @@
+COMMENT: //  AtCoder Beginner Contest 134 
+NEWLINE: 
+
+COMMENT: //  ドタバタしてるけど頑張るぞー
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+SEMI: ;
+COMMENT: //ループ用変数
+NEWLINE: 
+
+ID: int
+ID: n
+ID: count
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: d
+NUMBER: 256
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: d2
+NUMBER: 256
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: emp
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: max
+ID: max2
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: box
+NUMBER: 256
+LBRACE: {
+RBRACE: }
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: box2
+NUMBER: 256
+LBRACE: {
+RBRACE: }
+SEMI: ;
+NEWLINE: 
+
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: // INFO //
+NEWLINE: 
+
+COMMENT: // n 木の本数
+NEWLINE: 
+
+COMMENT: // d 監視員が他に見れる本数    
+NEWLINE: 
+
+COMMENT: //  入力
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: d
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: d2
+ID: i
+ID: d
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //  処理
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: max2
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: j
+NUMBER: 0
+SEMI: ;
+ID: j
+ID: n
+SEMI: ;
+ID: j
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+ID: d
+ID: j
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max2
+ID: max
+SEMI: ;
+NEWLINE: 
+
+ID: max
+ID: d
+ID: j
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+ID: if
+LPAREN: (
+ID: max2
+ID: d
+ID: j
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max2
+ID: d
+ID: j
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //  出力
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+ID: d
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+
+
+RBRACE: }
+NEWLINE: 
+

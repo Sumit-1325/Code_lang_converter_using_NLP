@@ -1,0 +1,366 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+
+ID: int
+ID: w
+ID: h
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: float
+ID: s
+ID: skari
+SEMI: ;
+NEWLINE: 
+
+ID: float
+ID: square
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: tori
+SEMI: ;
+NEWLINE: 
+
+ID: float
+ID: tates1
+ID: tates2
+ID: yokos1
+ID: yokos2
+ID: realyokos
+ID: realtates
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d%d%d%d"
+ID: w
+ID: h
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: square
+LPAREN: (
+ID: float
+RPAREN: )
+ID: w
+TIMES: *
+ID: h
+SEMI: ;
+NEWLINE: 
+
+ID: tates1
+LPAREN: (
+ID: float
+RPAREN: )
+ID: x
+TIMES: *
+ID: h
+SEMI: ;
+NEWLINE: 
+
+ID: tates2
+LPAREN: (
+ID: float
+RPAREN: )
+LPAREN: (
+ID: w
+MINUS: -
+ID: x
+RPAREN: )
+TIMES: *
+ID: h
+SEMI: ;
+NEWLINE: 
+
+ID: yokos1
+LPAREN: (
+ID: float
+RPAREN: )
+ID: y
+TIMES: *
+ID: w
+SEMI: ;
+NEWLINE: 
+
+ID: yokos2
+LPAREN: (
+ID: float
+RPAREN: )
+LPAREN: (
+ID: h
+MINUS: -
+ID: y
+RPAREN: )
+TIMES: *
+ID: w
+SEMI: ;
+NEWLINE: 
+
+
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: tates1
+ID: tates2
+RPAREN: )
+NEWLINE: 
+
+ID: realtates
+ID: tates1
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: realtates
+ID: tates2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: yokos1
+ID: yokos2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: realyokos
+ID: yokos1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: realyokos
+ID: yokos2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: realyokos
+ID: realtates
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: skari
+ID: realtates
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: //対角線状にあるとき。
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: w
+ID: x
+NUMBER: 0
+ID: h
+ID: y
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: s
+ID: square
+DIVIDE: /
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+ID: w
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: tori
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: skari
+ID: s
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: tori
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: tori
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //対角線滋養にない
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: realyokos
+ID: realtates
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: s
+ID: realyokos
+SEMI: ;
+NEWLINE: 
+
+ID: tori
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: realyokos
+ID: realtates
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: s
+ID: realtates
+SEMI: ;
+NEWLINE: 
+
+ID: tori
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: realyokos
+ID: realtates
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: s
+ID: realyokos
+SEMI: ;
+NEWLINE: 
+
+ID: tori
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f\n"
+ID: s
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: tori
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

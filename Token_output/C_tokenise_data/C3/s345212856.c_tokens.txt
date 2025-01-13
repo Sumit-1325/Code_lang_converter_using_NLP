@@ -1,0 +1,62 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: int
+TIMES: *
+ID: list
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: list
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: malloc
+LPAREN: (
+LPAREN: (
+ID: sizeof
+ID: int
+RPAREN: )
+TIMES: *
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+

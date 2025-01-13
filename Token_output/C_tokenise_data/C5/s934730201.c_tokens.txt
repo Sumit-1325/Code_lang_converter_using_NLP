@@ -1,0 +1,172 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: int
+ID: argc
+ID: const
+ID: char
+TIMES: *
+ID: argv
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+NEWLINE: 
+
+ID: int
+ID: W
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: H
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: x
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: y
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: W
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: H
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: W
+ID: x
+ID: H
+ID: y
+NUMBER: 0
+ID: x
+NUMBER: 0
+ID: y
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //周上点
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf 1"
+ID: W
+TIMES: *
+ID: H
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //内部点
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: W
+ID: H
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //squaretype
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf 0"
+ID: W
+TIMES: *
+ID: H
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //長方形type
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf 1"
+ID: W
+TIMES: *
+ID: H
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

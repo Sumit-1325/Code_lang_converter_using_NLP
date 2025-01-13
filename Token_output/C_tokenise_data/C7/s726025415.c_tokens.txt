@@ -1,0 +1,391 @@
+DIVIDE: /
+TIMES: *
+ID: ex9_1
+NEWLINE: 
+
+ID: fmuacshai
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: define
+ID: SIZE
+NUMBER: 20
+NEWLINE: 
+
+COMMENT: //stackの定義
+NEWLINE: 
+
+ID: typedef
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: size
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: string
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: top
+TIMES: *
+ID: tail
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: stack
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //データの追加
+NEWLINE: 
+
+ID: void
+ID: push
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+ID: char
+ID: character
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+TIMES: *
+LPAREN: (
+ID: stk
+MINUS: -
+ID: top
+RPAREN: )
+ID: character
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //データの取り出し
+NEWLINE: 
+
+ID: void
+ID: pop
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //データの初期化
+NEWLINE: 
+
+ID: void
+ID: initialize
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: size
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+LPAREN: (
+ID: stk
+MINUS: -
+ID: string
+ID: SIZE
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: tail
+LPAREN: (
+ID: stk
+MINUS: -
+ID: string
+ID: SIZE
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //データの出力
+NEWLINE: 
+
+ID: void
+ID: output
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: stk
+MINUS: -
+ID: count
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%c"
+TIMES: *
+ID: stk
+MINUS: -
+ID: tail
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: tail
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //stack stkの定義
+NEWLINE: 
+
+ID: stack
+ID: stk
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //入力で利用するinputを定義
+NEWLINE: 
+
+ID: char
+ID: input
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //データを初期化
+NEWLINE: 
+
+ID: initialize
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: input
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //追加と消去をする
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: input
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: input
+ID: i
+NUMBER: 0
+ID: input
+ID: i
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: push
+LPAREN: (
+ID: stk
+ID: input
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: pop
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //出力
+NEWLINE: 
+
+ID: output
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

@@ -1,0 +1,256 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: a
+ID: b
+ID: ans
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: a_divisor
+NUMBER: 1000000000
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: b_divisor
+NUMBER: 1000000000
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count_a
+ID: count_b
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: a
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: count_a
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 1
+SEMI: ;
+ID: i
+ID: a
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: a_divisor
+ID: count_a
+ID: a
+DIVIDE: /
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: count_a
+ID: count_a
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: count_b
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 1
+SEMI: ;
+ID: i
+ID: b
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: b
+ID: i
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: b_divisor
+ID: count_b
+ID: b
+DIVIDE: /
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: count_b
+ID: count_b
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: ans
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: i
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: do
+LBRACE: {
+NEWLINE: 
+
+ID: j
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: do
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a_divisor
+ID: i
+ID: b_divisor
+ID: j
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: ans
+ID: a_divisor
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: j
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: while
+LPAREN: (
+ID: ans
+NUMBER: 0
+ID: j
+ID: count_b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: i
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: while
+LPAREN: (
+ID: ans
+NUMBER: 0
+ID: i
+ID: count_a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: ans
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

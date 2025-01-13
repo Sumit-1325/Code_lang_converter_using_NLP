@@ -1,0 +1,96 @@
+DIVIDE: /
+TIMES: *
+NEWLINE: 
+
+NEWLINE: 
+
+ID: Name
+ID: ABC_111_A
+ID: c
+NEWLINE: 
+
+ID: Author
+NEWLINE: 
+
+ID: Version
+NEWLINE: 
+
+ID: Copyright
+ID: Your
+ID: copyright
+ID: notice
+NEWLINE: 
+
+ID: Description
+ID: Hello
+ID: World
+ID: in
+ID: C
+ID: Ansi
+MINUS: -
+ID: style
+NEWLINE: 
+
+NEWLINE: 
+
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: n
+NUMBER: 1110
+MINUS: -
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

@@ -1,0 +1,149 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: int
+ID: argc
+ID: char
+ID: argv
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: unsigned
+ID: int
+ID: a
+NUMBER: 0
+ID: b
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+ID: feof
+LPAREN: (
+ID: stdin
+RPAREN: )
+ID: ferror
+LPAREN: (
+ID: stdin
+RPAREN: )
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+
+ID: unsigned
+ID: tmp
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: unsigned
+ID: cnt
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: a
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: tmp
+ID: a
+PLUS: +
+ID: b
+SEMI: ;
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+LPAREN: (
+ID: tmp
+DIVIDE: /
+NUMBER: 10
+RPAREN: )
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: cnt
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: tmp
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d %d %d\n"
+ID: a
+ID: b
+ID: cnt
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: cnt
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: break
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%*[^\n] %*[^\n]"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%*a %*b"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

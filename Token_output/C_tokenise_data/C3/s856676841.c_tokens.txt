@@ -1,0 +1,202 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+
+ID: define
+ID: MAX
+NUMBER: 10000
+NEWLINE: 
+
+
+ID: void
+ID: rec
+LPAREN: (
+ID: char
+TIMES: *
+ID: str
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: temp
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: tok
+SEMI: ;
+NEWLINE: 
+
+
+ID: tok
+ID: strtok
+LPAREN: (
+ID: NULL
+STRING: " "
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: tok
+ID: NULL
+RPAREN: )
+ID: return
+SEMI: ;
+NEWLINE: 
+
+ID: temp
+ID: atoi
+LPAREN: (
+ID: tok
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: rec
+LPAREN: (
+ID: str
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d "
+ID: temp
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: first_rec
+LPAREN: (
+ID: char
+TIMES: *
+ID: str
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: temp
+SEMI: ;
+NEWLINE: 
+
+
+ID: temp
+ID: atoi
+LPAREN: (
+ID: strtok
+LPAREN: (
+ID: str
+STRING: " "
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: rec
+LPAREN: (
+ID: str
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: temp
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: str
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d%*c"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: fgets
+LPAREN: (
+ID: str
+ID: MAX
+ID: stdin
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: first_rec
+LPAREN: (
+ID: str
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

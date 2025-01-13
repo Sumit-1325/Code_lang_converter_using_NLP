@@ -1,0 +1,210 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+ID: char
+ID: S
+NUMBER: 11
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: Cpy
+NUMBER: 11
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: S
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // printf("nagasa = %d\n",strlen(S));
+NEWLINE: 
+
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: strlen
+LPAREN: (
+ID: S
+RPAREN: )
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: S
+ID: i
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: Cpy
+ID: j
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: j
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: S
+ID: i
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: Cpy
+ID: j
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: j
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: S
+ID: i
+ID: B
+ID: Cpy
+ID: NULL
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: Cpy
+ID: j
+MINUS: -
+NUMBER: 1
+ID: X
+SEMI: ;
+NEWLINE: 
+
+ID: j
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: j
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: Cpy
+ID: i
+ID: X
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: continue
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%c"
+ID: Cpy
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

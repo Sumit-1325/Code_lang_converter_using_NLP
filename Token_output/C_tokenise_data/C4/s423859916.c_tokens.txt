@@ -1,0 +1,309 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdint
+ID: h
+NEWLINE: 
+
+ID: include
+ID: inttypes
+ID: h
+NEWLINE: 
+
+
+ID: typedef
+ID: int32_t
+ID: i32
+SEMI: ;
+NEWLINE: 
+
+
+ID: define
+ID: ALLOC
+LPAREN: (
+ID: size
+ID: type
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: type
+TIMES: *
+RPAREN: )
+ID: calloc
+LPAREN: (
+LPAREN: (
+ID: size
+RPAREN: )
+ID: sizeof
+LPAREN: (
+ID: type
+RPAREN: )
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: SORT
+LPAREN: (
+ID: a
+ID: num
+ID: cmp
+RPAREN: )
+ID: qsort
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: num
+RPAREN: )
+ID: sizeof
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: a
+RPAREN: )
+RPAREN: )
+ID: cmp
+RPAREN: )
+NEWLINE: 
+
+
+ID: int
+ID: cmp_int
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i32
+ID: d
+TIMES: *
+LPAREN: (
+ID: i32
+TIMES: *
+RPAREN: )
+ID: a
+MINUS: -
+TIMES: *
+LPAREN: (
+ID: i32
+TIMES: *
+RPAREN: )
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: return
+ID: d
+NUMBER: 0
+NUMBER: 0
+ID: d
+NUMBER: 0
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: run
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i32
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%"
+ID: SCNi32
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: i32
+TIMES: *
+ID: a
+ID: ALLOC
+LPAREN: (
+ID: n
+ID: i32
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: i32
+TIMES: *
+ID: b
+ID: ALLOC
+LPAREN: (
+ID: n
+ID: i32
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i32
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+PLUS: +
+PLUS: +
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%"
+ID: SCNi32
+ID: a
+PLUS: +
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: b
+ID: i
+ID: a
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: SORT
+LPAREN: (
+ID: b
+ID: n
+ID: cmp_int
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i32
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+PLUS: +
+PLUS: +
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+ID: b
+ID: n
+MINUS: -
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%"
+ID: PRIi32
+STRING: "\n"
+ID: b
+ID: n
+MINUS: -
+NUMBER: 2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%"
+ID: PRIi32
+STRING: "\n"
+ID: b
+ID: n
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: run
+LPAREN: (
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

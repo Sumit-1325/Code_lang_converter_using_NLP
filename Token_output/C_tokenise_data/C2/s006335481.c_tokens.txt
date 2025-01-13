@@ -1,0 +1,84 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: double
+ID: r
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: face
+ID: circle
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: r
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: face
+ID: r
+TIMES: *
+ID: r
+TIMES: *
+ID: M_PI
+SEMI: ;
+NEWLINE: 
+
+ID: circle
+ID: r
+TIMES: *
+NUMBER: 2
+TIMES: *
+ID: M_PI
+SEMI: ;
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%f "
+ID: face
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f\n"
+ID: circle
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

@@ -1,0 +1,111 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+
+ID: define
+ID: MAX_LEN
+NUMBER: 4
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: n
+ID: MAX_LEN
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+LPAREN: (
+ID: int
+RPAREN: )
+ID: strlen
+LPAREN: (
+ID: n
+RPAREN: )
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: n
+ID: i
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+ID: putchar
+LPAREN: (
+NUMBER: 9
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: putchar
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: puts
+LPAREN: (
+STRING: ""
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

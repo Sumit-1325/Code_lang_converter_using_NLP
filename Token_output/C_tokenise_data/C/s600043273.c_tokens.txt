@@ -1,0 +1,212 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: define
+ID: MAX_SIZE
+NUMBER: 256
+NEWLINE: 
+
+
+ID: int
+ID: count
+LPAREN: (
+ID: int
+ID: num
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: num
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: ans
+ID: MAX_SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: dataSize
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: while
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: num
+ID: num
+PLUS: +
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: num
+NUMBER: 0
+ID: EOF
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: break
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: ans
+ID: dataSize
+PLUS: +
+PLUS: +
+ID: count
+LPAREN: (
+ID: num
+NUMBER: 0
+PLUS: +
+ID: num
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: dataSize
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: ans
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: count
+LPAREN: (
+ID: int
+ID: num
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: ans
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: num
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: ans
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: num
+DIVIDE: /
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+ID: ans
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

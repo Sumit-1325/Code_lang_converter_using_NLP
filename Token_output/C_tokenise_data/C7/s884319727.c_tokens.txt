@@ -1,0 +1,542 @@
+DIVIDE: /
+TIMES: *
+ID: ex9_1
+NEWLINE: 
+
+ID: Y_Aizaki
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: define
+ID: SIZE
+NUMBER: 20
+NEWLINE: 
+
+
+ID: typedef
+ID: struct
+ID: string
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: size
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: date
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: top
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: string
+SEMI: ;
+NEWLINE: 
+
+
+ID: void
+ID: initialize_string
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+RPAREN: )
+SEMI: ;
+COMMENT: // stringの初期化
+NEWLINE: 
+
+ID: void
+ID: print_string_queue
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+RPAREN: )
+SEMI: ;
+COMMENT: // 先頭から取り出す
+NEWLINE: 
+
+ID: void
+ID: push
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+ID: char
+ID: unit
+RPAREN: )
+SEMI: ;
+COMMENT: // stringへの追加
+NEWLINE: 
+
+ID: char
+ID: pop
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+RPAREN: )
+SEMI: ;
+COMMENT: // stringからの削除・取り出し
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: string
+ID: str
+SEMI: ;
+NEWLINE: 
+
+ID: string
+TIMES: *
+ID: str_p
+ID: str
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: input
+ID: SIZE
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // 標準入力を受け取る
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: point
+ID: input
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // inputからstrへ移す際のポインター
+NEWLINE: 
+
+ID: char
+ID: garbage
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // popで取り出されるcharを捨てる場所
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%[01B]"
+ID: input
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: initialize_string
+LPAREN: (
+ID: str_p
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // strの初期化
+NEWLINE: 
+
+NEWLINE: 
+
+ID: while
+LPAREN: (
+TIMES: *
+ID: point
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: // Bだったらpop
+NEWLINE: 
+
+ID: if
+LPAREN: (
+TIMES: *
+ID: point
+ID: B
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: str_p
+MINUS: -
+ID: count
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: garbage
+ID: pop
+LPAREN: (
+ID: str_p
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: // 0か1だったらpush
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: push
+LPAREN: (
+ID: str_p
+TIMES: *
+ID: point
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: point
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: print_string_queue
+LPAREN: (
+ID: str_p
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: initialize_string
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: str
+MINUS: -
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: str
+MINUS: -
+ID: size
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: str
+MINUS: -
+ID: top
+LPAREN: (
+ID: str
+MINUS: -
+ID: date
+ID: SIZE
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: print_string_queue
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: point
+SEMI: ;
+NEWLINE: 
+
+
+ID: point
+LPAREN: (
+ID: str
+MINUS: -
+ID: date
+ID: SIZE
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: str
+MINUS: -
+ID: count
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%c"
+TIMES: *
+ID: point
+MINUS: -
+MINUS: -
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: putchar
+LPAREN: (
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: push
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+ID: char
+ID: unit
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: str
+MINUS: -
+ID: count
+ID: str
+MINUS: -
+ID: size
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "Error stack overflow. (unit=%c)\n"
+ID: unit
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: exit
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: str
+MINUS: -
+ID: top
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+TIMES: *
+LPAREN: (
+ID: str
+MINUS: -
+ID: top
+RPAREN: )
+ID: unit
+SEMI: ;
+NEWLINE: 
+
+ID: str
+MINUS: -
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: char
+ID: pop
+LPAREN: (
+ID: string
+TIMES: *
+ID: str
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: latest
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: str
+MINUS: -
+ID: count
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "Error stack underflow.\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: latest
+TIMES: *
+LPAREN: (
+ID: str
+MINUS: -
+ID: top
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: str
+MINUS: -
+ID: top
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: str
+MINUS: -
+ID: count
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+ID: latest
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

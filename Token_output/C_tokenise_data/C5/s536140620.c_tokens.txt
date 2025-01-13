@@ -1,0 +1,140 @@
+DIVIDE: /
+TIMES: *
+ID: ABC
+MINUS: -
+ID: A
+ID: c
+NEWLINE: 
+
+ID: Yuta
+ID: Takayanagi
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: width
+ID: height
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: float
+ID: area
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d %d"
+ID: width
+ID: height
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: /* 長方形の幅、高さと点の座標を入力 */
+NEWLINE: 
+
+
+ID: area
+LPAREN: (
+ID: float
+RPAREN: )
+LPAREN: (
+ID: width
+TIMES: *
+ID: height
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+SEMI: ;
+COMMENT: /* 長方形の面積を求める */
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%f "
+ID: area
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+DIVIDE: /
+TIMES: *
+NEWLINE: 
+
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+NUMBER: 2
+TIMES: *
+ID: x
+ID: width
+NUMBER: 2
+TIMES: *
+ID: y
+ID: height
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: /* 点が長方形の中心と一致する時条件を満たす直線は無限に存在する */
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "1\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "0\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

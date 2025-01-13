@@ -1,0 +1,160 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: a
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: b
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: sum
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: keta
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // もし入力の終わりではないならループする
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: a
+ID: b
+RPAREN: )
+ID: EOF
+ID: count
+NUMBER: 200
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+COMMENT: // もし入力された値が規定外だったらif文以下の処理をスキップする。
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+NUMBER: 0
+ID: b
+NUMBER: 0
+ID: a
+NUMBER: 1000000
+ID: b
+NUMBER: 1000000
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: continue
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: sum
+ID: a
+PLUS: +
+ID: b
+SEMI: ;
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+ID: sum
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: sum
+DIVIDE: /
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+
+ID: keta
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: keta
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: keta
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }

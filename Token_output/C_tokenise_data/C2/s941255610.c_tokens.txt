@@ -1,0 +1,70 @@
+COMMENT: //半径 r の円の面積と円周の長さを求めるプログラムを作成して下さい
+NEWLINE: 
+
+ID: define
+ID: _CRT_SECURE_NO_WARNINGS
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: r
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: pai
+NUMBER: 3
+NUMBER: 14159265359
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: r
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f %f\n"
+ID: r
+TIMES: *
+ID: r
+TIMES: *
+ID: pai
+NUMBER: 2
+TIMES: *
+ID: r
+TIMES: *
+ID: pai
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

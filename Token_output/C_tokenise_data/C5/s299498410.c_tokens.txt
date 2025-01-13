@@ -1,0 +1,310 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: double
+ID: n
+ID: m
+SEMI: ;
+NEWLINE: 
+
+
+ID: double
+ID: i
+ID: j
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: m
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: double
+ID: l
+NUMBER: 1000
+SEMI: ;
+NEWLINE: 
+
+
+ID: double
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: double
+ID: menseki
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+
+ID: double
+ID: hakox1
+ID: hakox2
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: hakoy1
+ID: hakoy2
+SEMI: ;
+NEWLINE: 
+
+ID: hakox1
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: hakox2
+ID: n
+MINUS: -
+ID: x
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: hakox1
+TIMES: *
+ID: m
+ID: hakox2
+TIMES: *
+ID: m
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: menseki
+NUMBER: 0
+ID: hakox1
+TIMES: *
+ID: m
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: menseki
+NUMBER: 0
+ID: hakox2
+TIMES: *
+ID: m
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: hakoy1
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: hakoy2
+ID: m
+MINUS: -
+ID: y
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: saiteki
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: n
+TIMES: *
+ID: hakoy1
+ID: n
+TIMES: *
+ID: hakoy2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: menseki
+NUMBER: 1
+ID: n
+TIMES: *
+ID: hakoy1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: menseki
+NUMBER: 1
+ID: n
+TIMES: *
+ID: hakoy2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: double
+ID: ans
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: menseki
+NUMBER: 0
+ID: menseki
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: ans
+ID: menseki
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: menseki
+NUMBER: 0
+ID: menseki
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: ans
+ID: menseki
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: ans
+ID: menseki
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: saiteki
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: n
+ID: x
+ID: m
+ID: y
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: ans
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: saiteki
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%.6lf "
+ID: ans
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: saiteki
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

@@ -1,0 +1,125 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: c
+ID: div
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: a
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: c
+ID: a
+SEMI: ;
+NEWLINE: 
+
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: b
+ID: c
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: div
+ID: b
+SEMI: ;
+ID: div
+NUMBER: 0
+SEMI: ;
+ID: div
+MINUS: -
+MINUS: -
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: div
+NUMBER: 0
+ID: b
+ID: div
+NUMBER: 0
+RPAREN: )
+ID: break
+SEMI: ;
+NEWLINE: 
+
+ID: else
+LBRACE: {
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: div
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

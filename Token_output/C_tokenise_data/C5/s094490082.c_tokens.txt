@@ -1,0 +1,136 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: long
+ID: long
+ID: int
+ID: w
+ID: h
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lld"
+ID: w
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lld"
+ID: h
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lld"
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lld"
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf "
+ID: w
+TIMES: *
+ID: h
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: w
+ID: x
+ID: x
+NUMBER: 0
+ID: h
+ID: y
+ID: y
+NUMBER: 0
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "0"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: x
+ID: w
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+ID: y
+ID: h
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "1"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: x
+ID: w
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+ID: y
+ID: h
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "0"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+ID: printf
+LPAREN: (
+STRING: "1"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

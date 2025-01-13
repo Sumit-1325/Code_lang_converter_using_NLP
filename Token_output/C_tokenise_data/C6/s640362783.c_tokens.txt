@@ -1,0 +1,126 @@
+ID: https
+COMMENT: //abc111.contest.atc#include <stdio.h>
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+ID: n
+ID: k
+ID: l
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: i
+ID: n
+DIVIDE: /
+NUMBER: 100
+SEMI: ;
+NEWLINE: 
+
+ID: l
+ID: i
+TIMES: *
+NUMBER: 100
+PLUS: +
+ID: i
+TIMES: *
+NUMBER: 10
+PLUS: +
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: k
+LPAREN: (
+ID: i
+PLUS: +
+NUMBER: 1
+RPAREN: )
+TIMES: *
+NUMBER: 100
+PLUS: +
+LPAREN: (
+ID: i
+PLUS: +
+NUMBER: 1
+RPAREN: )
+TIMES: *
+NUMBER: 10
+PLUS: +
+LPAREN: (
+ID: i
+PLUS: +
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: l
+MINUS: -
+ID: n
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: j
+ID: l
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: j
+ID: k
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

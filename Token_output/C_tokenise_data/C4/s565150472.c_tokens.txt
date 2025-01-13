@@ -1,0 +1,203 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: cmp
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: p
+ID: const
+ID: void
+TIMES: *
+ID: q
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: p
+MINUS: -
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: q
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: a
+ID: n
+ID: b
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: a
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: b
+ID: i
+ID: a
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: qsort
+LPAREN: (
+ID: b
+ID: sizeof
+LPAREN: (
+ID: b
+RPAREN: )
+DIVIDE: /
+ID: sizeof
+LPAREN: (
+ID: int
+RPAREN: )
+ID: sizeof
+LPAREN: (
+ID: int
+RPAREN: )
+ID: cmp
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+ID: b
+ID: n
+MINUS: -
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: b
+ID: n
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: b
+ID: n
+MINUS: -
+NUMBER: 2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

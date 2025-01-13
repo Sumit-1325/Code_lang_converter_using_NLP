@@ -1,0 +1,183 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: define
+ID: ll
+ID: long
+ID: long
+NEWLINE: 
+
+ID: define
+ID: rep
+LPAREN: (
+ID: i
+ID: l
+ID: r
+RPAREN: )
+ID: for
+LPAREN: (
+ID: ll
+ID: i
+LPAREN: (
+ID: l
+RPAREN: )
+SEMI: ;
+ID: i
+LPAREN: (
+ID: r
+RPAREN: )
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: max
+LPAREN: (
+ID: p
+ID: q
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: p
+RPAREN: )
+LPAREN: (
+ID: q
+RPAREN: )
+LPAREN: (
+ID: p
+RPAREN: )
+LPAREN: (
+ID: q
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: min
+LPAREN: (
+ID: p
+ID: q
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: p
+RPAREN: )
+LPAREN: (
+ID: q
+RPAREN: )
+LPAREN: (
+ID: p
+RPAREN: )
+LPAREN: (
+ID: q
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+
+ID: char
+ID: s
+NUMBER: 99
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: cnt
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: while
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: c
+ID: getchar
+LPAREN: (
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+NUMBER: 10
+RPAREN: )
+ID: break
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+ID: B
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: cnt
+NUMBER: 0
+RPAREN: )
+ID: s
+ID: cnt
+MINUS: -
+MINUS: -
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: s
+ID: cnt
+PLUS: +
+PLUS: +
+ID: c
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: puts
+LPAREN: (
+ID: s
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

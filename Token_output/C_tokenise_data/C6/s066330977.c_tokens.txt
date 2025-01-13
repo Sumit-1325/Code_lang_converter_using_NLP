@@ -1,0 +1,130 @@
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: c
+NUMBER: 3
+ID: ans
+NUMBER: 4
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: c
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: ans
+NUMBER: 0
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: ans
+NUMBER: 1
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: ans
+NUMBER: 2
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: ans
+NUMBER: 3
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+NUMBER: 0
+NUMBER: 1
+RPAREN: )
+ID: ans
+NUMBER: 0
+NUMBER: 9
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+NUMBER: 1
+NUMBER: 1
+RPAREN: )
+ID: ans
+NUMBER: 1
+NUMBER: 9
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+NUMBER: 2
+NUMBER: 1
+RPAREN: )
+ID: ans
+NUMBER: 2
+NUMBER: 9
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+NUMBER: 0
+NUMBER: 9
+RPAREN: )
+ID: ans
+NUMBER: 0
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+NUMBER: 1
+NUMBER: 9
+RPAREN: )
+ID: ans
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: c
+NUMBER: 2
+NUMBER: 9
+RPAREN: )
+ID: ans
+NUMBER: 2
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%s"
+ID: ans
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

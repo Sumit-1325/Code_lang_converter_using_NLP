@@ -1,0 +1,279 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: a
+NUMBER: 200
+LBRACE: {
+NUMBER: 0
+RBRACE: }
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: b
+NUMBER: 200
+LBRACE: {
+NUMBER: 0
+RBRACE: }
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+NUMBER: 1
+ID: j
+NUMBER: 0
+ID: k
+SEMI: ;
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: a
+ID: j
+ID: b
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: j
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: a
+ID: j
+ID: b
+ID: j
+RPAREN: )
+ID: EOF
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: break
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: k
+NUMBER: 0
+SEMI: ;
+ID: k
+ID: j
+SEMI: ;
+ID: k
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 10
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 99
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 100
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 999
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i
+NUMBER: 3
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 1000
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 9999
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i
+NUMBER: 4
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 10000
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 99999
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i
+NUMBER: 5
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 100000
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 999999
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i
+NUMBER: 6
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 1000000
+ID: a
+ID: k
+PLUS: +
+ID: b
+ID: k
+NUMBER: 9999999
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i
+NUMBER: 7
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

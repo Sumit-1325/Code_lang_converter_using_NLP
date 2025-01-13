@@ -1,0 +1,93 @@
+ID: define
+ID: _CRT_SECURE_NO_WARNINGS
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+COMMENT: //scanf("%d",&x);
+NEWLINE: 
+
+COMMENT: //printf("%d",x);
+NEWLINE: 
+
+COMMENT: //for(i=0;i<N;i++){  }
+NEWLINE: 
+
+COMMENT: //if( == ){  }else{  }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: int
+ID: c
+NUMBER: 1110
+MINUS: -
+ID: n
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: c
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+
+NEWLINE: 
+
+
+
+
+
+
+
+RBRACE: }
+NEWLINE: 
+

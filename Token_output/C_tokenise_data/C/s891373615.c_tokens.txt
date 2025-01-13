@@ -1,0 +1,131 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: keta
+LPAREN: (
+ID: int
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: a
+ID: b
+ID: status
+ID: sum
+ID: answer
+SEMI: ;
+NEWLINE: 
+
+ID: do
+LBRACE: {
+NEWLINE: 
+
+ID: status
+ID: scanf
+LPAREN: (
+STRING: "%d%d"
+ID: a
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: sum
+ID: a
+PLUS: +
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: answer
+ID: keta
+LPAREN: (
+ID: sum
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: answer
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: while
+LPAREN: (
+ID: status
+ID: EOF
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: keta
+LPAREN: (
+ID: int
+ID: a
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: a
+NUMBER: 0
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: a
+DIVIDE: /
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

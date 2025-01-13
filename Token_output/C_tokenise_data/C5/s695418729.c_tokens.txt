@@ -1,0 +1,216 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: double
+ID: w
+ID: h
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: p1
+ID: p2
+ID: q1
+ID: q2
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lf %lf %lf %lf"
+ID: w
+ID: h
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: p1
+ID: x
+TIMES: *
+ID: h
+SEMI: ;
+NEWLINE: 
+
+ID: p2
+LPAREN: (
+ID: w
+TIMES: *
+ID: h
+RPAREN: )
+MINUS: -
+ID: p1
+SEMI: ;
+NEWLINE: 
+
+ID: q1
+ID: y
+TIMES: *
+ID: w
+SEMI: ;
+NEWLINE: 
+
+ID: q2
+LPAREN: (
+ID: w
+TIMES: *
+ID: h
+RPAREN: )
+MINUS: -
+ID: q1
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: p1
+ID: p2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: a
+ID: p2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: a
+ID: p1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: q1
+ID: q2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: b
+ID: q2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: b
+ID: q1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf 0"
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: b
+ID: a
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf 0"
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf 1"
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

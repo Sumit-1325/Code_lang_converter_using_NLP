@@ -1,0 +1,304 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: A
+NUMBER: 200000
+LBRACE: {
+RBRACE: }
+SEMI: ;
+COMMENT: //入力された数値を代入する配列A
+NEWLINE: 
+
+ID: int
+ID: B
+NUMBER: 200000
+LBRACE: {
+RBRACE: }
+SEMI: ;
+COMMENT: //比較した後の数値を代入する配列B
+NEWLINE: 
+
+ID: int
+ID: N
+ID: max
+NUMBER: 2
+SEMI: ;
+COMMENT: //max
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: N
+RPAREN: )
+SEMI: ;
+COMMENT: //Nの入力
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: A
+ID: i
+RPAREN: )
+SEMI: ;
+COMMENT: //Aの入力
+NEWLINE: 
+
+
+COMMENT: /*最大値をmaxに保存していく。ただし、i=jの時には比較を行わないようにした。 */
+NEWLINE: 
+
+DIVIDE: /
+TIMES: *
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: j
+NUMBER: 0
+SEMI: ;
+ID: j
+ID: N
+SEMI: ;
+ID: j
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: i
+ID: j
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+ID: A
+ID: j
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max
+ID: A
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: B
+ID: i
+ID: max
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+ID: int
+ID: max_num
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+PLUS: +
+NUMBER: 1
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+NUMBER: 0
+ID: A
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max
+NUMBER: 1
+ID: max
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: max
+NUMBER: 0
+ID: A
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: max_num
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+NUMBER: 1
+ID: A
+ID: i
+PLUS: +
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+ID: max
+NUMBER: 1
+ID: A
+ID: i
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: //printf("一番大きいのは%d 二番目は%d\n",max[0],max[1]);
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: int
+ID: k
+NUMBER: 0
+SEMI: ;
+ID: k
+ID: N
+SEMI: ;
+ID: k
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: k
+ID: max_num
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+
+RBRACE: }
+NEWLINE: 
+
+
+RBRACE: }

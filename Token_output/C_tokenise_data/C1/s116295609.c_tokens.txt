@@ -1,0 +1,169 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: x
+ID: y
+ID: ans1
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d%d"
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+NUMBER: 0
+ID: y
+NUMBER: 0
+ID: x
+NUMBER: 1000000001
+ID: y
+NUMBER: 1000000001
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: a
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: b
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: y
+ID: x
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: a
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: b
+ID: x
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: while
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: ans1
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: ans1
+NUMBER: 0
+RPAREN: )
+ID: break
+SEMI: ;
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: b
+ID: ans1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+

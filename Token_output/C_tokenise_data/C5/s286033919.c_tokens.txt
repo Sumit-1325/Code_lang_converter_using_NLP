@@ -1,0 +1,195 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: ctype
+ID: h
+NEWLINE: 
+
+ID: define
+ID: max
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+COMMENT: /* ２個の値の最大値 */
+NEWLINE: 
+
+ID: define
+ID: min
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+COMMENT: /* ２個の値の最小値 */
+NEWLINE: 
+
+ID: define
+ID: ENTER
+ID: printf
+LPAREN: (
+STRING: "\n"
+RPAREN: )
+COMMENT: /* 改行プリント */
+NEWLINE: 
+
+COMMENT: /********************************************************************************************************************************/
+NEWLINE: 
+
+COMMENT: /* main *************************************************************************************************************************/
+NEWLINE: 
+
+COMMENT: /********************************************************************************************************************************/
+NEWLINE: 
+
+ID: int
+ID: DEBUG
+NUMBER: 1
+SEMI: ;
+COMMENT: /* デバッグプリント 提出時は0 */
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: double
+ID: ans
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: yn
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: W
+ID: H
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: Wf
+ID: Hf
+ID: xf
+ID: yf
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d %d"
+ID: W
+ID: H
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: Wf
+ID: W
+SEMI: ;
+ID: Hf
+ID: H
+SEMI: ;
+NEWLINE: 
+
+
+ID: yn
+LPAREN: (
+LPAREN: (
+ID: x
+TIMES: *
+NUMBER: 2
+ID: W
+RPAREN: )
+LPAREN: (
+ID: y
+TIMES: *
+NUMBER: 2
+ID: H
+RPAREN: )
+RPAREN: )
+NUMBER: 1
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%.6f %d\n"
+ID: Wf
+TIMES: *
+ID: Hf
+DIVIDE: /
+NUMBER: 2
+ID: yn
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

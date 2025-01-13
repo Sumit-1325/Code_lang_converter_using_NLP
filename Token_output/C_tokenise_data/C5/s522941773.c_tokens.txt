@@ -1,0 +1,242 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: W
+ID: H
+ID: x
+ID: y
+ID: i
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: no0
+ID: no1
+ID: no2
+ID: no3
+ID: no4
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: box1
+ID: noY
+ID: noX
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: noXM
+ID: noYM
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: flg
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d %d"
+ID: W
+ID: H
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: no0
+ID: W
+TIMES: *
+ID: H
+SEMI: ;
+NEWLINE: 
+
+ID: no1
+LPAREN: (
+ID: W
+MINUS: -
+ID: x
+RPAREN: )
+TIMES: *
+ID: H
+SEMI: ;
+NEWLINE: 
+
+ID: no2
+ID: x
+TIMES: *
+ID: H
+SEMI: ;
+NEWLINE: 
+
+ID: no3
+LPAREN: (
+ID: H
+MINUS: -
+ID: y
+RPAREN: )
+TIMES: *
+ID: W
+SEMI: ;
+NEWLINE: 
+
+ID: no4
+ID: y
+TIMES: *
+ID: W
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: no1
+ID: no2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: noX
+ID: no2
+SEMI: ;
+NEWLINE: 
+
+ID: noXM
+ID: no1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: noX
+ID: no1
+SEMI: ;
+NEWLINE: 
+
+ID: noXM
+ID: no2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: no3
+ID: no4
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: noY
+ID: no4
+SEMI: ;
+NEWLINE: 
+
+ID: noYM
+ID: no3
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: noY
+ID: no3
+SEMI: ;
+NEWLINE: 
+
+ID: noYM
+ID: no4
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: noX
+ID: noY
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: flg
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: noXM
+ID: noYM
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: box1
+ID: noY
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: box1
+ID: noX
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f %d"
+ID: box1
+ID: flg
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //printf("%s",S);
+NEWLINE: 
+
+RBRACE: }

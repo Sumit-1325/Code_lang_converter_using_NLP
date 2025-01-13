@@ -1,0 +1,266 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: N
+TIMES: *
+ID: A
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: c
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: max
+ID: max2
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d%c"
+ID: N
+ID: c
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+ID: A
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: malloc
+LPAREN: (
+ID: sizeof
+LPAREN: (
+ID: int
+RPAREN: )
+TIMES: *
+LPAREN: (
+ID: N
+PLUS: +
+NUMBER: 1
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+ID: max
+ID: max2
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d%c"
+ID: A
+ID: i
+ID: c
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: A
+ID: i
+ID: max
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: max2
+ID: max
+SEMI: ;
+NEWLINE: 
+
+ID: max
+ID: A
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: A
+ID: i
+ID: max2
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: max2
+ID: A
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: A
+ID: i
+ID: max
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+ID: free
+LPAREN: (
+ID: A
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: //system("pause");
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

@@ -1,0 +1,254 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: N
+ID: A
+ID: N
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: k
+NUMBER: 0
+SEMI: ;
+ID: k
+ID: N
+SEMI: ;
+ID: k
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: A
+ID: k
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: max
+ID: A
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+ID: po
+ID: ex
+ID: A
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+ID: A
+ID: i
+RPAREN: )
+NEWLINE: 
+
+ID: max
+ID: A
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: A
+ID: i
+ID: max
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: po
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: j
+NUMBER: 0
+SEMI: ;
+ID: j
+ID: i
+SEMI: ;
+ID: j
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: ex
+ID: A
+ID: j
+RPAREN: )
+NEWLINE: 
+
+ID: ex
+ID: A
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: j
+ID: i
+PLUS: +
+NUMBER: 1
+SEMI: ;
+ID: j
+ID: N
+SEMI: ;
+ID: j
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: ex
+ID: A
+ID: j
+RPAREN: )
+NEWLINE: 
+
+ID: ex
+ID: A
+ID: j
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: n
+NUMBER: 0
+SEMI: ;
+ID: n
+ID: po
+SEMI: ;
+ID: n
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: ex
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: n
+ID: po
+PLUS: +
+NUMBER: 1
+SEMI: ;
+ID: n
+ID: N
+SEMI: ;
+ID: n
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

@@ -1,0 +1,108 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+
+ID: char
+ID: s
+NUMBER: 12
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: res
+NUMBER: 12
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: s
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //    size_t l;
+NEWLINE: 
+
+COMMENT: //    for (int i = 0; i < strlen(s); i++) {
+NEWLINE: 
+
+COMMENT: //        char c = s[i];
+NEWLINE: 
+
+COMMENT: //        l = strlen(res);
+NEWLINE: 
+
+COMMENT: //        //printf("%d\n",l);
+NEWLINE: 
+
+COMMENT: //        if (c == '0') {
+NEWLINE: 
+
+COMMENT: //            res[l] = '0';
+NEWLINE: 
+
+COMMENT: //        } else if (c == '1') {
+NEWLINE: 
+
+COMMENT: //            res[l] = '1';
+NEWLINE: 
+
+COMMENT: //        } 
+NEWLINE: 
+
+COMMENT: //        else if (c == 'B') {
+NEWLINE: 
+
+COMMENT: //        //    res[l-1] = '\0';
+NEWLINE: 
+
+COMMENT: //            res[l] = 'B';
+NEWLINE: 
+
+COMMENT: //        }
+NEWLINE: 
+
+COMMENT: //        //printf("%s\n", res);
+NEWLINE: 
+
+COMMENT: //    }
+NEWLINE: 
+
+
+COMMENT: //puts("----");
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%s"
+ID: res
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+RBRACE: }

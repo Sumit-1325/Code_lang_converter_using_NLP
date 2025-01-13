@@ -1,0 +1,418 @@
+DIVIDE: /
+TIMES: *
+ID: ex
+NUMBER: 9
+ID: _1
+NEWLINE: 
+
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: define
+ID: SIZE
+NUMBER: 11
+NEWLINE: 
+
+
+
+ID: typedef
+ID: struct
+ID: stack
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: size
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: data
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: top
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: stack
+SEMI: ;
+NEWLINE: 
+
+
+ID: void
+ID: initialize_stack
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: size
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+LPAREN: (
+ID: stk
+MINUS: -
+ID: data
+ID: SIZE
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: push
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+ID: char
+ID: x
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: stk
+MINUS: -
+ID: count
+ID: stk
+MINUS: -
+ID: size
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: fprintf
+LPAREN: (
+ID: stderr
+STRING: "Error: stack overflow. (x=%c)\n"
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: exit
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+TIMES: *
+LPAREN: (
+ID: stk
+MINUS: -
+ID: top
+RPAREN: )
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: char
+ID: pop
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: fprintf
+LPAREN: (
+ID: stdout
+STRING: "Error: stack underflow.\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: exit
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: x
+TIMES: *
+LPAREN: (
+ID: stk
+MINUS: -
+ID: top
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+ID: return
+ID: x
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stack
+ID: stk
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: input_seq
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: tmp
+TIMES: *
+ID: ptr
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: input_seq
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: ptr
+ID: input_seq
+SEMI: ;
+NEWLINE: 
+
+ID: initialize_stack
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: while
+LPAREN: (
+TIMES: *
+ID: ptr
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+TIMES: *
+ID: ptr
+ID: B
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: push
+LPAREN: (
+ID: stk
+TIMES: *
+ID: ptr
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: stk
+ID: count
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: tmp
+ID: pop
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: ptr
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: stk
+ID: count
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%c"
+ID: pop
+LPAREN: (
+ID: stk
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

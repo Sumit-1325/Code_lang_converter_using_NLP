@@ -1,0 +1,217 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: ctype
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: x
+ID: y
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: min
+ID: max
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: mod
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: inp
+NUMBER: 128
+SEMI: ;
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: gets
+LPAREN: (
+ID: inp
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: sscanf
+LPAREN: (
+ID: inp
+STRING: "%d %d"
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: /*--- CALC ---*/
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+ID: y
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: min
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: max
+ID: x
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: min
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: max
+ID: y
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: mod
+ID: max
+ID: min
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+LPAREN: (
+ID: mod
+NUMBER: 2
+RPAREN: )
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: break
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: y
+ID: mod
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: min
+ID: mod
+SEMI: ;
+NEWLINE: 
+
+ID: max
+ID: y
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: min
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: max
+ID: mod
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: mod
+ID: max
+ID: min
+SEMI: ;
+NEWLINE: 
+
+
+ID: break
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: mod
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

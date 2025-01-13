@@ -1,0 +1,184 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: A
+NUMBER: 200000
+LBRACE: {
+RBRACE: }
+SEMI: ;
+COMMENT: //入力された数値を代入する配列A
+NEWLINE: 
+
+ID: int
+ID: B
+NUMBER: 200000
+LBRACE: {
+RBRACE: }
+SEMI: ;
+COMMENT: //比較した後の数値を代入する配列B
+NEWLINE: 
+
+ID: int
+ID: N
+ID: max
+SEMI: ;
+COMMENT: //最大値の一時保存max
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: N
+RPAREN: )
+SEMI: ;
+COMMENT: //Nの入力
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: A
+ID: i
+RPAREN: )
+SEMI: ;
+COMMENT: //Aの入力
+NEWLINE: 
+
+
+COMMENT: /*最大値をmaxに保存していく。ただし、i=jの時には比較を行わないようにした。 */
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: j
+NUMBER: 0
+SEMI: ;
+ID: j
+ID: N
+SEMI: ;
+ID: j
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: i
+ID: j
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+ID: A
+ID: j
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: max
+ID: A
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: B
+ID: i
+ID: max
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: k
+NUMBER: 0
+SEMI: ;
+ID: k
+ID: N
+SEMI: ;
+ID: k
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: B
+ID: k
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+RBRACE: }

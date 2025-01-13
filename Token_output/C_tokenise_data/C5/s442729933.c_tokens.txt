@@ -1,0 +1,661 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: sq
+LPAREN: (
+ID: int
+ID: w
+ID: int
+ID: h
+ID: int
+ID: x
+ID: int
+ID: y
+ID: int
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+ID: w
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+NEWLINE: 
+
+ID: return
+ID: h
+TIMES: *
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: return
+ID: h
+TIMES: *
+LPAREN: (
+ID: w
+MINUS: -
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: y
+ID: h
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+NEWLINE: 
+
+ID: return
+ID: w
+TIMES: *
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: return
+ID: w
+TIMES: *
+LPAREN: (
+ID: h
+MINUS: -
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: double
+ID: cut
+LPAREN: (
+ID: int
+ID: w
+ID: int
+ID: h
+ID: int
+ID: x
+ID: int
+ID: y
+ID: int
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: tx
+ID: x
+ID: ty
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: over
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: ty
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+ID: x
+MINUS: -
+MINUS: -
+SEMI: ;
+ID: ty
+MINUS: -
+MINUS: -
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: tx
+ID: w
+RPAREN: )
+LBRACE: {
+ID: y
+PLUS: +
+PLUS: +
+SEMI: ;
+ID: tx
+PLUS: +
+PLUS: +
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: over
+PLUS: +
+LPAREN: (
+ID: double
+RPAREN: )
+ID: x
+TIMES: *
+ID: x
+DIVIDE: /
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: y
+ID: h
+RPAREN: )
+NEWLINE: 
+
+ID: over
+PLUS: +
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+ID: y
+MINUS: -
+ID: h
+RPAREN: )
+TIMES: *
+LPAREN: (
+ID: y
+MINUS: -
+ID: h
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+LPAREN: (
+ID: w
+MINUS: -
+ID: x
+RPAREN: )
+TIMES: *
+ID: y
+ID: h
+TIMES: *
+ID: w
+RPAREN: )
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: w
+MINUS: -
+ID: x
+RPAREN: )
+TIMES: *
+ID: y
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+MINUS: -
+ID: over
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+ID: h
+TIMES: *
+ID: w
+MINUS: -
+LPAREN: (
+ID: w
+MINUS: -
+ID: x
+RPAREN: )
+TIMES: *
+ID: y
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+PLUS: +
+ID: over
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: ty
+ID: h
+RPAREN: )
+LBRACE: {
+ID: x
+PLUS: +
+PLUS: +
+SEMI: ;
+ID: ty
+PLUS: +
+PLUS: +
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: tx
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+ID: y
+MINUS: -
+MINUS: -
+SEMI: ;
+ID: tx
+MINUS: -
+MINUS: -
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+ID: w
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: over
+PLUS: +
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+ID: x
+MINUS: -
+ID: w
+RPAREN: )
+TIMES: *
+LPAREN: (
+ID: x
+MINUS: -
+ID: w
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: y
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: over
+PLUS: +
+LPAREN: (
+ID: double
+RPAREN: )
+ID: y
+TIMES: *
+ID: y
+DIVIDE: /
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+TIMES: *
+LPAREN: (
+ID: h
+MINUS: -
+ID: y
+RPAREN: )
+ID: h
+TIMES: *
+ID: w
+RPAREN: )
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+ID: x
+TIMES: *
+LPAREN: (
+ID: h
+MINUS: -
+ID: y
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+MINUS: -
+ID: over
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+ID: h
+TIMES: *
+ID: w
+MINUS: -
+ID: x
+TIMES: *
+LPAREN: (
+ID: h
+MINUS: -
+ID: y
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+PLUS: +
+ID: over
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: w
+ID: h
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: squ
+ID: tri
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d %d"
+ID: w
+ID: h
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: x
+NUMBER: 0
+ID: y
+NUMBER: 0
+ID: x
+ID: w
+ID: y
+ID: h
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "0.000000 1\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: sq
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 1
+RPAREN: )
+ID: sq
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 0
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: squ
+ID: sq
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: squ
+ID: sq
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: cut
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 1
+RPAREN: )
+ID: cut
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 0
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: tri
+ID: cut
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: tri
+ID: cut
+LPAREN: (
+ID: w
+ID: h
+ID: x
+ID: y
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: squ
+ID: tri
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f 1\n"
+ID: squ
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: squ
+ID: tri
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f 0\n"
+ID: squ
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f 0\n"
+ID: tri
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

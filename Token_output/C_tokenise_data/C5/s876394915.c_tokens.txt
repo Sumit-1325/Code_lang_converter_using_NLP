@@ -1,0 +1,122 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: define
+ID: MAX
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+ID: a
+ID: b
+ID: a
+ID: b
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: a
+ID: b
+ID: c
+ID: d
+ID: max1
+ID: max2
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d%d%d%d"
+ID: a
+ID: b
+ID: c
+ID: d
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: max1
+ID: MAX
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: max2
+ID: MAX
+LPAREN: (
+ID: c
+ID: d
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: area
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+ID: a
+TIMES: *
+ID: b
+RPAREN: )
+DIVIDE: /
+LPAREN: (
+ID: max1
+TIMES: *
+ID: max2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf"
+ID: area
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: " 1"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: " 0"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

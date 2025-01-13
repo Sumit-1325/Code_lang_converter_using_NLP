@@ -1,0 +1,1699 @@
+NEWLINE: 
+
+ID: pragma
+ID: warning
+LPAREN: (
+ID: disable
+NUMBER: 4996
+RPAREN: )
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+ID: include
+ID: float
+ID: h
+NEWLINE: 
+
+
+ID: pragma
+ID: region
+NEWLINE: 
+
+ID: define
+ID: i_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: i_cin2
+LPAREN: (
+ID: X
+ID: Y
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: X
+ID: Y
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: i_cin4
+LPAREN: (
+ID: X
+ID: Y
+ID: Z
+ID: W
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d %d"
+ID: X
+ID: Y
+ID: Z
+ID: W
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: i_cin3
+LPAREN: (
+ID: X
+ID: Y
+ID: Z
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d"
+ID: X
+ID: Y
+ID: Z
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: l_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%ld"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: f_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%f"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: l_cin2
+LPAREN: (
+ID: X
+ID: Y
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%ld %ld"
+ID: X
+ID: Y
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: s_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: c_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%c"
+ID: X
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: define
+ID: ll_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%lld"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: ull_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%llu"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: lf_cin
+LPAREN: (
+ID: X
+RPAREN: )
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+
+ID: define
+ID: i_cout
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: f_cout
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%g\n"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: i_cout2
+LPAREN: (
+ID: X
+ID: Y
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%d %d\n"
+ID: X
+ID: Y
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: l_cout
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%ld\n"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: s_cout
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%s\n"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: s_coutc
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%s"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+
+ID: define
+ID: c_cout
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%c"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+
+
+ID: define
+ID: ll_cout
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%lld\n"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: ull_cout
+LPAREN: (
+ID: X
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%llu\n"
+ID: X
+RPAREN: )
+NEWLINE: 
+
+
+
+
+ID: typedef
+ID: long
+ID: long
+ID: ll
+SEMI: ;
+NEWLINE: 
+
+ID: typedef
+ID: unsigned
+ID: long
+ID: long
+ID: ull
+SEMI: ;
+NEWLINE: 
+
+
+ID: define
+ID: rept
+LPAREN: (
+ID: x
+ID: s
+ID: n
+RPAREN: )
+ID: for
+LPAREN: (
+ID: int
+ID: x
+ID: s
+SEMI: ;
+ID: x
+ID: n
+SEMI: ;
+ID: x
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+
+ID: define
+ID: S_RTN
+LPAREN: (
+ID: S
+RPAREN: )
+ID: s_cout
+LPAREN: (
+ID: S
+RPAREN: )
+SEMI: ;
+ID: return
+NUMBER: 0
+NEWLINE: 
+
+
+
+ID: define
+ID: _itoa
+LPAREN: (
+ID: A
+ID: N
+RPAREN: )
+ID: sprintf
+LPAREN: (
+ID: A
+STRING: "%d"
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: i_cins
+LPAREN: (
+ID: int
+ID: n
+ID: int
+TIMES: *
+ID: A
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: l_cins2
+LPAREN: (
+ID: int
+ID: n
+ID: long
+TIMES: *
+ID: A
+ID: long
+TIMES: *
+ID: B
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: s_dsort
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: s_asort
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: _gcd
+LPAREN: (
+ID: int
+ID: a
+ID: int
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: _swp
+LPAREN: (
+ID: int
+TIMES: *
+ID: a
+ID: int
+TIMES: *
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: _cknum
+LPAREN: (
+ID: char
+TIMES: *
+ID: a
+ID: int
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: _atoi
+LPAREN: (
+ID: char
+TIMES: *
+ID: s
+ID: int
+ID: len
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+
+ID: int
+ID: s_asorts
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: s_dsorts
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: //昇順
+NEWLINE: 
+
+ID: int
+ID: s_asorts
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: strcmp
+LPAREN: (
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: a
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: s_dsorts
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: strcmp
+LPAREN: (
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: b
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: s_dsort
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: b
+MINUS: -
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: s_asort
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: a
+MINUS: -
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: l_cins2
+LPAREN: (
+ID: int
+ID: n
+ID: long
+TIMES: *
+ID: a
+ID: long
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: rept
+LPAREN: (
+ID: i
+NUMBER: 0
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: l_cin2
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: a
+PLUS: +
+ID: i
+RPAREN: )
+TIMES: *
+LPAREN: (
+ID: b
+PLUS: +
+ID: i
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: i_cins
+LPAREN: (
+ID: int
+ID: n
+ID: int
+TIMES: *
+ID: a
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: i_cin
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: a
+PLUS: +
+ID: i
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: _gcd
+LPAREN: (
+ID: int
+ID: a
+ID: int
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: r
+ID: tmp
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LBRACE: {
+ID: tmp
+ID: a
+SEMI: ;
+ID: a
+ID: b
+SEMI: ;
+ID: b
+ID: tmp
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: r
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: r
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: r
+RPAREN: )
+ID: break
+SEMI: ;
+NEWLINE: 
+
+ID: a
+ID: b
+SEMI: ;
+ID: b
+ID: r
+SEMI: ;
+NEWLINE: 
+
+ID: r
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+COMMENT: // puts("Yes\n") puts("No\n")
+NEWLINE: 
+
+COMMENT: // scanf("%d.%d") 浮動小数点入力を整数２つで得る
+NEWLINE: 
+
+
+
+COMMENT: //#define pai  3.1415926535      
+NEWLINE: 
+
+ID: define
+ID: deg_rad
+LPAREN: (
+ID: X
+RPAREN: )
+LPAREN: (
+ID: X
+TIMES: *
+LPAREN: (
+ID: M_PI
+DIVIDE: /
+NUMBER: 180
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+
+ID: long
+ID: _max
+LPAREN: (
+ID: long
+ID: a
+ID: long
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+ID: a
+ID: b
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: long
+ID: _min
+LPAREN: (
+ID: long
+ID: a
+ID: long
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+ID: a
+ID: b
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: _swp
+LPAREN: (
+ID: int
+TIMES: *
+ID: a
+ID: int
+TIMES: *
+ID: b
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: tmp
+SEMI: ;
+NEWLINE: 
+
+ID: tmp
+TIMES: *
+ID: b
+SEMI: ;
+TIMES: *
+ID: b
+TIMES: *
+ID: a
+SEMI: ;
+TIMES: *
+ID: a
+ID: tmp
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: _cknum
+LPAREN: (
+ID: char
+TIMES: *
+ID: a
+ID: int
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: t
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+NUMBER: 0
+ID: a
+ID: i
+NUMBER: 9
+RPAREN: )
+ID: return
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+
+ID: int
+ID: _atoi
+LPAREN: (
+ID: char
+TIMES: *
+ID: s
+ID: int
+ID: len
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: tmp
+NUMBER: 20
+SEMI: ;
+NEWLINE: 
+
+ID: memcpy
+LPAREN: (
+ID: tmp
+ID: s
+ID: len
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: tmp
+ID: len
+NUMBER: 0
+ID: x00
+SEMI: ;
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: atoi
+LPAREN: (
+ID: tmp
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: //素因数分解　pf素数が入る　pc 素数の数
+NEWLINE: 
+
+ID: ll
+ID: _pfact
+LPAREN: (
+ID: ll
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: static
+ID: ll
+ID: pf
+NUMBER: 100000000
+SEMI: ;
+NEWLINE: 
+
+ID: static
+ID: ll
+ID: pc
+SEMI: ;
+NEWLINE: 
+
+
+ID: ll
+ID: _pfact
+LPAREN: (
+ID: ll
+ID: a
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: long
+ID: i
+ID: r
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: pf
+ID: pc
+NUMBER: 2
+SEMI: ;
+ID: pc
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: _pfact
+LPAREN: (
+ID: a
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: r
+ID: sqrt
+LPAREN: (
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 3
+SEMI: ;
+ID: i
+ID: r
+SEMI: ;
+ID: i
+PLUS: +
+NUMBER: 2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: pf
+ID: pc
+ID: i
+SEMI: ;
+ID: pc
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: return
+LPAREN: (
+ID: _pfact
+LPAREN: (
+ID: a
+DIVIDE: /
+ID: i
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: pf
+ID: pc
+ID: a
+SEMI: ;
+ID: pc
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+RBRACE: }
+NEWLINE: 
+
+
+
+ID: pragma
+ID: endregion
+NEWLINE: 
+
+
+
+COMMENT: //ABC043 B - バイナリックイージー
+NEWLINE: 
+
+ID: static
+ID: char
+ID: x
+NUMBER: 11
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: len
+ID: i
+ID: p
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: ans
+NUMBER: 11
+SEMI: ;
+NEWLINE: 
+
+
+ID: s_cin
+LPAREN: (
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: len
+ID: strlen
+LPAREN: (
+ID: x
+RPAREN: )
+SEMI: ;
+ID: x
+ID: len
+NUMBER: 0
+ID: x00
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: len
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+ID: i
+ID: B
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: p
+RPAREN: )
+ID: p
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+ID: continue
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: ans
+ID: p
+ID: x
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: p
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: ans
+ID: p
+NUMBER: 0
+ID: x00
+SEMI: ;
+NEWLINE: 
+
+ID: s_cout
+LPAREN: (
+ID: ans
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+
+COMMENT: ////ABC 98 B - Cut and Count
+NEWLINE: 
+
+COMMENT: //int b98_sort(const void* a, const void* b);
+NEWLINE: 
+
+COMMENT: //int b98_sort(const void* a, const void* b) {
+NEWLINE: 
+
+COMMENT: //	return(memcmp((char*)a, (char*)b, 10));
+NEWLINE: 
+
+COMMENT: //}
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //static struct _s {
+NEWLINE: 
+
+COMMENT: //	char a;
+NEWLINE: 
+
+COMMENT: //	int  p;
+NEWLINE: 
+
+COMMENT: //} s[101];
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //int main(void) {
+NEWLINE: 
+
+COMMENT: //	int i, n;
+NEWLINE: 
+
+COMMENT: //	char ss[101];
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //	i_cin(n);
+NEWLINE: 
+
+COMMENT: //	scanf("%c", &(s[0].a));
+NEWLINE: 
+
+COMMENT: //	for (i = 0; i < n; i++){
+NEWLINE: 
+
+COMMENT: //		scanf("%c", &(s[i].a));
+NEWLINE: 
+
+COMMENT: //		s[i].p = i;
+NEWLINE: 
+
+COMMENT: //	}
+NEWLINE: 
+
+COMMENT: //	
+NEWLINE: 
+
+COMMENT: //	qsort(s, n, sizeof(struct _s), b98_sort);
+NEWLINE: 
+
+COMMENT: //	for (i = 0; i < n; i++) {
+NEWLINE: 
+
+COMMENT: //		printf("%d:%c\n", s[i].p, s[i].a);
+NEWLINE: 
+
+COMMENT: //	}
+NEWLINE: 
+
+COMMENT: //	int se[50][2], cnt = 0,c=0;
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //	se[0][0] = s[0].p;
+NEWLINE: 
+
+COMMENT: //	for (i = 1; i < n; i++) {
+NEWLINE: 
+
+COMMENT: //		printf("%d:%c %c\n", i, s[i].a, s[i - 1].a);
+NEWLINE: 
+
+COMMENT: //		if (s[i].a != s[i - 1].a) {
+NEWLINE: 
+
+COMMENT: //			if (c) {
+NEWLINE: 
+
+COMMENT: //				se[cnt][1] = s[i-1].p;
+NEWLINE: 
+
+COMMENT: //				c = 0; cnt++;
+NEWLINE: 
+
+COMMENT: //				se[cnt][0] = s[i].p;
+NEWLINE: 
+
+COMMENT: //			}
+NEWLINE: 
+
+COMMENT: //		}
+NEWLINE: 
+
+COMMENT: //		else c = 1;
+NEWLINE: 
+
+COMMENT: //	}
+NEWLINE: 
+
+COMMENT: //	if (c && i == n) {
+NEWLINE: 
+
+COMMENT: //		se[0][1] = s[i - 1].p; cnt++;
+NEWLINE: 
+
+COMMENT: //	}
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //	printf("%d \n", cnt);
+NEWLINE: 
+
+COMMENT: //	qsort(se, cnt, sizeof(int)*2, s_asort);
+NEWLINE: 
+
+COMMENT: //	for(i=0;i<cnt;i++)
+NEWLINE: 
+
+COMMENT: //	   printf("%d %d\n", se[i][0], se[i][1]);
+NEWLINE: 
+
+COMMENT: //	
+NEWLINE: 
+
+COMMENT: //	return 0;
+NEWLINE: 
+
+COMMENT: //}
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+
+COMMENT: //ABC 065 B - Trained?
+NEWLINE: 
+
+COMMENT: //int main(void) {
+NEWLINE: 
+
+COMMENT: //	return 0;
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //}
+NEWLINE: 
+
+
+COMMENT: //ABC 133 C - Remainder Minimization 2019
+NEWLINE: 
+
+
+COMMENT: //ABC 95-C Half and Half
+NEWLINE: 
+
+COMMENT: //int main(void) {
+NEWLINE: 
+
+COMMENT: //	long  a, b, c, x, y;
+NEWLINE: 
+
+COMMENT: //	long tmp;
+NEWLINE: 
+
+COMMENT: //	scanf("%ld %ld %ld %ld %ld", &a, &b, &c, &x, &y);
+NEWLINE: 
+
+COMMENT: //	c *= 2;
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //	/*if (a >= c) {
+NEWLINE: 
+
+COMMENT: //		tmp=(long)x * c + ((y - x < 0) ? 0 :(long)(y - x) * b);
+NEWLINE: 
+
+COMMENT: //		printf("%ld",tmp);
+NEWLINE: 
+
+COMMENT: //		return 0;
+NEWLINE: 
+
+COMMENT: //	}
+NEWLINE: 
+
+COMMENT: //	if (b >= c) {
+NEWLINE: 
+
+COMMENT: //		tmp =(long)y * c + ((x - y < 0) ? 0 : (long)(x - y) * b);
+NEWLINE: 
+
+COMMENT: //	    printf("%ld\n", tmp);
+NEWLINE: 
+
+COMMENT: //		return 0;
+NEWLINE: 
+
+COMMENT: //	}*/
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //	if ((a + b) <= c) {
+NEWLINE: 
+
+COMMENT: //	     printf("%ld\n",a * x + b * y);
+NEWLINE: 
+
+COMMENT: //	     return 0;
+NEWLINE: 
+
+COMMENT: //	}
+NEWLINE: 
+
+COMMENT: //	
+NEWLINE: 
+
+COMMENT: //	tmp = a * x + b * y;
+NEWLINE: 
+
+COMMENT: //	if (c * _max(x, y) < tmp) {
+NEWLINE: 
+
+COMMENT: //		printf("%ld\n",c* _max(x, y)); return 0;
+NEWLINE: 
+
+COMMENT: //	}
+NEWLINE: 
+
+COMMENT: //
+NEWLINE: 
+
+COMMENT: //	tmp = c * _min(x, y);
+NEWLINE: 
+
+COMMENT: //	tmp += ((x < y) ? (y - x) * b :(x - y) * a);
+NEWLINE: 
+
+COMMENT: //	printf("%ld\n", tmp);
+NEWLINE: 
+
+COMMENT: //	return 0;
+NEWLINE: 
+
+COMMENT: //}
+NEWLINE: 
+
+
+
+
+
+NEWLINE: 
+
+NEWLINE: 
+
+
+

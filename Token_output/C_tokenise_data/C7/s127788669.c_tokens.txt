@@ -1,0 +1,423 @@
+DIVIDE: /
+TIMES: *
+ID: ex9_1
+NEWLINE: 
+
+ID: kento_titech
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: define
+ID: SIZE
+NUMBER: 11
+NEWLINE: 
+
+ID: typedef
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: size
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: data
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: tail
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: head
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: stack
+SEMI: ;
+NEWLINE: 
+
+
+ID: void
+ID: initialize_stack
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: void
+ID: print_stack
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: void
+ID: push
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+ID: char
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: void
+ID: pop
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: stack
+ID: stk
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: initialize_stack
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: input
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: input
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: strlen
+LPAREN: (
+ID: input
+RPAREN: )
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: input
+ID: i
+NUMBER: 1
+ID: input
+ID: i
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: push
+LPAREN: (
+ID: stk
+ID: input
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: pop
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: print_stack
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: initialize_stack
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: size
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: head
+LPAREN: (
+ID: stk
+MINUS: -
+ID: data
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: tail
+LPAREN: (
+ID: stk
+MINUS: -
+ID: data
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: push
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+ID: char
+ID: x
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+TIMES: *
+LPAREN: (
+ID: stk
+MINUS: -
+ID: tail
+RPAREN: )
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: tail
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: pop
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: tail
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: print_stack
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: p
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: p
+ID: stk
+MINUS: -
+ID: head
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: stk
+MINUS: -
+ID: count
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%c"
+TIMES: *
+ID: p
+PLUS: +
+PLUS: +
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

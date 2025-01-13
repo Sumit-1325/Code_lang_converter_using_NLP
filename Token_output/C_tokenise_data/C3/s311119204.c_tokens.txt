@@ -1,0 +1,1859 @@
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+
+ID: define
+ID: _
+STRING: "\n\tmov"
+NEWLINE: 
+
+ID: define
+ID: a
+STRING: "q\t%r"
+NEWLINE: 
+
+ID: define
+ID: b
+STRING: ""
+ID: _
+STRING: "q\t"
+NEWLINE: 
+
+ID: define
+ID: c
+STRING: "\n\tj"
+NEWLINE: 
+
+ID: define
+ID: d
+STRING: ":\n\t"
+NEWLINE: 
+
+ID: define
+ID: e
+STRING: "\n\tc"
+NEWLINE: 
+
+ID: define
+ID: f
+STRING: "\n\tp"
+NEWLINE: 
+
+ID: define
+ID: g
+STRING: ""
+ID: b
+STRING: "%r"
+NEWLINE: 
+
+ID: define
+ID: h
+STRING: ""
+ID: e
+STRING: "mp"
+NEWLINE: 
+
+ID: define
+ID: i
+STRING: "(%rbx)"
+NEWLINE: 
+
+ID: define
+ID: j
+STRING: "(%rsp"
+NEWLINE: 
+
+ID: define
+ID: l
+STRING: ""
+ID: f
+STRING: "op"
+ID: a
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: k
+STRING: ""
+ID: e
+STRING: "allq\t"
+NEWLINE: 
+
+ID: define
+ID: q
+STRING: ""
+ID: f
+STRING: "ushq\t%r"
+NEWLINE: 
+
+ID: define
+ID: p
+STRING: ""
+ID: _
+STRING: "l\t"
+NEWLINE: 
+
+ID: define
+ID: o
+STRING: ", %rax"
+NEWLINE: 
+
+ID: define
+ID: n
+STRING: ""
+ID: d
+STRING: "mov"
+NEWLINE: 
+
+ID: define
+ID: m
+STRING: ""
+ID: h
+STRING: "b\t$"
+NEWLINE: 
+
+ID: define
+ID: r
+STRING: ", %r1"
+NEWLINE: 
+
+ID: define
+ID: t
+STRING: "\n\ttest"
+NEWLINE: 
+
+ID: define
+ID: s
+STRING: "\n\tadd"
+NEWLINE: 
+
+ID: define
+ID: w
+STRING: "ax, %"
+NEWLINE: 
+
+ID: define
+ID: v
+STRING: ", %dl"
+NEWLINE: 
+
+ID: define
+ID: y
+STRING: ""
+ID: t
+ID: a
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: x
+STRING: ", %rdi"
+NEWLINE: 
+
+ID: define
+ID: z
+STRING: ""
+ID: o
+STRING: "\n\t"
+NEWLINE: 
+
+ID: define
+ID: A
+STRING: "leaq\t"
+NEWLINE: 
+
+ID: define
+ID: C
+STRING: ", %rdx\n\t"
+NEWLINE: 
+
+ID: define
+ID: B
+STRING: "allq\t"
+NEWLINE: 
+
+ID: define
+ID: H
+STRING: "(%r14)"
+NEWLINE: 
+
+ID: define
+ID: G
+STRING: ""
+ID: c
+STRING: "e\t"
+NEWLINE: 
+
+ID: define
+ID: F
+STRING: "retq\nL"
+NEWLINE: 
+
+ID: define
+ID: E
+STRING: ""
+ID: j
+STRING: "), %r"
+NEWLINE: 
+
+ID: define
+ID: D
+STRING: ""
+ID: _
+STRING: "b\t$"
+NEWLINE: 
+
+ID: define
+ID: S
+STRING: "\n\txorl\t%"
+NEWLINE: 
+
+ID: define
+ID: Q
+STRING: "\"
+ID: ax
+STRING: ",@progbits"
+NEWLINE: 
+
+ID: define
+ID: P
+STRING: "@function\n"
+NEWLINE: 
+
+ID: define
+ID: O
+STRING: "pushq\t%r"
+NEWLINE: 
+
+ID: define
+ID: N
+STRING: ""
+ID: d
+STRING: ".siz"
+NEWLINE: 
+
+ID: define
+ID: M
+STRING: ", %rsi\n\t"
+NEWLINE: 
+
+ID: define
+ID: K
+STRING: "\n\n\t.s"
+NEWLINE: 
+
+ID: define
+ID: J
+STRING: "bx, %r"
+NEWLINE: 
+
+ID: define
+ID: I
+STRING: ", %eax"
+NEWLINE: 
+
+ID: define
+ID: Z
+STRING: "bp\n\t"
+NEWLINE: 
+
+ID: define
+ID: Y
+STRING: ", %rbp"
+NEWLINE: 
+
+ID: define
+ID: X
+STRING: ""
+ID: h
+ID: a
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: W
+STRING: ""
+ID: n
+STRING: "q\t"
+NEWLINE: 
+
+ID: define
+ID: V
+STRING: ""
+ID: Q
+STRING: "\n\t."
+NEWLINE: 
+
+ID: define
+ID: T
+STRING: ", %cl"
+ID: m
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _c
+STRING: ""
+ID: l
+STRING: "bx"
+ID: l
+STRING: "1"
+NEWLINE: 
+
+ID: define
+ID: _b
+STRING: ""
+ID: j
+STRING: ")"
+ID: _
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _a
+STRING: "\n\t"
+ID: A
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: __
+STRING: ""
+ID: c
+STRING: "ne\tL"
+NEWLINE: 
+
+ID: define
+ID: _i
+STRING: "\n\tud2\nL"
+NEWLINE: 
+
+ID: define
+ID: _h
+STRING: ", %rcx\n\t"
+NEWLINE: 
+
+ID: define
+ID: _g
+STRING: ""
+ID: c
+STRING: "mp\tL"
+NEWLINE: 
+
+ID: define
+ID: _f
+STRING: "\n\t"
+ID: F
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _e
+STRING: ""
+ID: K
+STRING: "ection"
+NEWLINE: 
+
+ID: define
+ID: _d
+STRING: ""
+ID: p
+STRING: "%e"
+ID: w
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _m
+STRING: ""
+ID: a
+STRING: "ax, %r"
+NEWLINE: 
+
+ID: define
+ID: _k
+STRING: "eax, %eax"
+NEWLINE: 
+
+ID: define
+ID: _l
+STRING: ""
+ID: d
+STRING: "ud2"
+ID: _i
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _j
+STRING: ""
+ID: _d
+STRING: "edx"
+ID: s
+STRING: "b\t$-"
+NEWLINE: 
+
+ID: define
+ID: _s
+STRING: "\"
+STRING: "V"
+ID: type
+ID: t
+NEWLINE: 
+
+ID: define
+ID: _r
+STRING: ""
+ID: _
+STRING: "dqu\t%xmm0, "
+NEWLINE: 
+
+ID: define
+ID: _q
+STRING: ", %esi"
+ID: g
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _p
+STRING: ""
+ID: _e
+STRING: "\t.text."
+NEWLINE: 
+
+ID: define
+ID: _o
+STRING: "di"
+ID: e
+ID: B
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _n
+STRING: ""
+ID: I
+STRING: "\n\tadd"
+NEWLINE: 
+
+ID: define
+ID: _C
+STRING: ""
+ID: S
+STRING: "ebp, %ebp"
+NEWLINE: 
+
+ID: define
+ID: _B
+STRING: "__errno_location@PLT"
+NEWLINE: 
+
+ID: define
+ID: _A
+STRING: ""
+ID: K
+STRING: "ection\t\"
+ID: text
+NEWLINE: 
+
+ID: define
+ID: _z
+STRING: ""
+ID: d
+ID: O
+ID: Z
+ID: O
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _y
+STRING: "\n\tshlq\t$3"
+NEWLINE: 
+
+ID: define
+ID: _x
+STRING: "Ln"
+ID: _
+STRING: "w\t%ax, 40"
+ID: i
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _w
+STRING: ""
+ID: m
+STRING: "1, %al"
+ID: c
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _v
+STRING: "\n\tshrl\t$8"
+NEWLINE: 
+
+ID: define
+ID: _t
+STRING: ""
+ID: d
+STRING: "addb\t%al"
+NEWLINE: 
+
+ID: define
+ID: _W
+STRING: ""
+ID: q
+STRING: "14"
+ID: q
+STRING: "12"
+ID: q
+STRING: "bx"
+ID: _
+ID: a
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _V
+STRING: ""
+ID: C
+STRING: "sub"
+ID: a
+STRING: "bp"
+ID: C
+STRING: "movl\t%r1"
+NEWLINE: 
+
+ID: define
+ID: _T
+STRING: "@PLT"
+ID: y
+STRING: "ax, %rax"
+ID: c
+STRING: "s\tL"
+NEWLINE: 
+
+ID: define
+ID: _S
+STRING: ""
+ID: s
+ID: _m
+STRING: "bp"
+ID: s
+ID: _m
+STRING: "bx"
+ID: X
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _Q
+STRING: ""
+ID: _c
+STRING: "2"
+ID: l
+STRING: "14"
+ID: l
+STRING: "15"
+ID: l
+ID: Z
+ID: F
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _P
+STRING: "%xmm0, %xmm0"
+ID: f
+STRING: "shuf"
+NEWLINE: 
+
+ID: define
+ID: _O
+STRING: "cx"
+ID: z
+STRING: "imulq\t%r9"
+ID: g
+STRING: "dx"
+ID: z
+STRING: "shrq\t$63, %rax\n\tsarq\t$2"
+ID: C
+STRING: "addq\t%r"
+ID: w
+STRING: "rdx"
+ID: s
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _N
+STRING: "testq\t%rsi, %rsi"
+ID: c
+STRING: "ns\tL"
+NEWLINE: 
+
+ID: define
+ID: _M
+STRING: "@PLT"
+ID: g
+STRING: "ax, %r14"
+ID: y
+STRING: "14"
+ID: r
+STRING: "4"
+NEWLINE: 
+
+ID: define
+ID: _K
+STRING: "cx\n\timulq\t(%rcx)"
+ID: z
+STRING: "movq\t%rax, (%rcx)"
+NEWLINE: 
+
+ID: define
+ID: _J
+STRING: "l"
+ID: X
+ID: w
+STRING: "r13"
+ID: c
+STRING: "le\tLl"
+ID: _y
+ID: z
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _I
+STRING: ""
+ID: d
+ID: O
+STRING: "14"
+ID: q
+STRING: "bx"
+ID: q
+STRING: "ax"
+NEWLINE: 
+
+ID: define
+ID: _H
+STRING: ""
+ID: g
+STRING: "di, %rbx"
+ID: m
+STRING: "1, 40"
+ID: i
+ID: __
+STRING: ""
+NEWLINE: 
+
+ID: define
+ID: _G
+STRING: ""
+ID: g
+STRING: "bx"
+ID: x
+ID: k
+ID: _x
+ID: _w
+STRING: "ne\tL"
+NEWLINE: 
+
+ID: define
+ID: _F
+STRING: "65, %dl"
+ID: D
+STRING: "-55"
+ID: T
+STRING: "26"
+NEWLINE: 
+
+ID: define
+ID: _E
+STRING: "97"
+ID: v
+ID: D
+STRING: "-87"
+ID: T
+STRING: "25, %dl"
+ID: c
+STRING: "a\tL"
+NEWLINE: 
+
+ID: define
+ID: _D
+STRING: "48"
+ID: v
+ID: m
+STRING: "10, %al"
+ID: c
+STRING: "b\tL"
+NEWLINE: 
+
+ID: __asm__
+LPAREN: (
+STRING: "\t.text\n\t.file\t\"
+ID: solutions
+DIVIDE: /
+ID: AOJ
+DIVIDE: /
+ID: ITP1
+DIVIDE: /
+ID: ITP1_6_A
+ID: s
+STRING: "\n\t.section\t.text.Li,"
+ID: Q
+STRING: "\n\t.type\tLi,"
+ID: P
+STRING: "Li:"
+ID: q
+STRING: "bp"
+ID: q
+STRING: "15"
+ID: _W
+STRING: "dx, %r15"
+ID: _
+ID: a
+STRING: "si, %rbx"
+ID: _
+STRING: "l\t%edi, %r12d"
+ID: S
+STRING: "r14d, %r14d"
+ID: y
+STRING: "15, %r15"
+ID: G
+STRING: "LT"
+ID: _C
+STRING: "\nLj:"
+ID: _
+ID: a
+STRING: "15"
+ID: _V
+STRING: "2d, %edi"
+ID: _
+ID: a
+ID: J
+STRING: "si"
+ID: k
+STRING: "write"
+ID: _T
+STRING: "o"
+ID: _S
+STRING: "15"
+ID: Y
+ID: c
+STRING: "b\tLj\nLT:"
+ID: S
+ID: _k
+ID: _g
+STRING: "5\nLo:"
+ID: k
+ID: _B
+ID: p
+STRING: "(%rax)"
+ID: r
+STRING: "4d\n\tshlq\t$32"
+ID: r
+STRING: "4"
+ID: p
+STRING: "$1, %eax\nL5"
+ID: d
+STRING: "or"
+ID: _m
+STRING: "14"
+ID: _
+ID: a
+STRING: "14"
+ID: o
+ID: _Q
+STRING: "E"
+ID: N
+STRING: "e\tLi, LE-Li"
+ID: _A
+STRING: "Ln"
+ID: _s
+STRING: "Ln,"
+ID: P
+STRING: "Ln"
+ID: _z
+STRING: "15"
+ID: _W
+STRING: "di"
+ID: r
+STRING: "4"
+ID: b
+ID: H
+ID: Y
+ID: b
+STRING: "8"
+ID: H
+ID: o
+ID: X
+STRING: "bp"
+ID: o
+ID: c
+STRING: "ne\tLW"
+ID: b
+STRING: "16"
+ID: H
+ID: r
+STRING: "2"
+ID: X
+STRING: "12"
+ID: Y
+ID: c
+STRING: "ne\tLW"
+ID: _C
+ID: g
+STRING: "bp, 8"
+ID: H
+ID: y
+STRING: "12"
+ID: r
+STRING: "2"
+ID: G
+STRING: "LR"
+ID: p
+STRING: "32"
+ID: H
+ID: r
+STRING: "5d"
+ID: b
+STRING: "24"
+ID: H
+STRING: ", %rbx"
+ID: _C
+STRING: "\nLg"
+ID: n
+ID: a
+STRING: "12"
+ID: _V
+STRING: "5d, %edi"
+ID: g
+ID: J
+STRING: "si"
+ID: k
+STRING: "read"
+ID: _T
+STRING: "9"
+ID: G
+STRING: "LR"
+ID: _S
+STRING: "12"
+ID: Y
+ID: c
+STRING: "b\tLg\nLR"
+ID: n
+ID: a
+STRING: "bp, "
+ID: H
+ID: S
+ID: _k
+STRING: "\nLW"
+ID: d
+STRING: "cmp"
+ID: a
+STRING: "bp"
+ID: o
+ID: c
+STRING: "ge\tLw"
+ID: b
+STRING: "24"
+ID: H
+STRING: ", %rcx"
+ID: _
+STRING: "zbl\t(%rcx,%rax), %ecx\n\tinc"
+ID: a
+STRING: "ax"
+ID: g
+STRING: "ax, 8"
+ID: H
+STRING: "\n\tshll\t$8, %ecx\n\tmovw\t$1, %ax"
+ID: c
+STRING: "mp\tL8\nLw"
+ID: d
+STRING: "xorl\t%ecx, %ecx\n\txorl\t%"
+ID: _k
+STRING: "\nL8"
+ID: n
+STRING: "zwl\t%"
+ID: w
+STRING: "eax\n\torl\t%ecx, %eax"
+ID: _Q
+STRING: "9"
+ID: d
+STRING: "c"
+ID: B
+ID: _B
+STRING: "\n\tud2"
+ID: _i
+STRING: "e"
+ID: N
+STRING: "e\tLn, Le-Ln"
+ID: _A
+STRING: "L0"
+ID: _s
+STRING: "L0,"
+ID: P
+STRING: "L0"
+ID: _z
+STRING: "14"
+ID: q
+STRING: "bx"
+ID: p
+STRING: "%esi"
+ID: r
+STRING: "4d"
+ID: g
+STRING: "di, %rbx"
+ID: _
+STRING: "q\t"
+ID: i
+ID: o
+ID: b
+STRING: "8"
+ID: i
+ID: C
+STRING: "cmp"
+ID: a
+STRING: "dx"
+ID: o
+ID: c
+STRING: "ne\tLF"
+ID: p
+STRING: "24"
+ID: i
+STRING: ", %edi"
+ID: b
+STRING: "16"
+ID: i
+ID: Y
+ID: b
+STRING: "%rbp, %rsi"
+ID: k
+STRING: "Li"
+ID: t
+STRING: "l\t%"
+ID: _k
+ID: c
+STRING: "ne\tLV"
+ID: b
+STRING: "$0, "
+ID: i
+ID: S
+ID: _k
+ID: _g
+STRING: "p\nLF"
+ID: W
+STRING: "16"
+ID: i
+ID: Y
+STRING: "\nLp"
+ID: n
+STRING: "b\t%r14b, (%rbp,%rax)\n\tinc"
+ID: a
+STRING: "ax"
+ID: g
+STRING: "ax, "
+ID: i
+ID: _c
+STRING: "4"
+ID: l
+ID: Z
+ID: F
+STRING: "V"
+ID: _l
+STRING: "O"
+ID: N
+STRING: "e\tL0, LO-L0"
+ID: _A
+STRING: "Lx"
+ID: _s
+STRING: "Lx,"
+ID: P
+STRING: "Lx"
+ID: d
+STRING: "subq\t$72, %rsp"
+ID: y
+STRING: "si"
+ID: M
+STRING: "setne\t%al"
+ID: s
+STRING: "b\t$63, %al"
+ID: y
+STRING: "si"
+ID: M
+STRING: "movb\t$45, %cl"
+ID: c
+STRING: "s\tL1"
+ID: _
+STRING: "b\t$48, %cl\nL1"
+ID: n
+STRING: "b\t%al, (%rsp)"
+ID: _
+STRING: "zbl\t%cl, %eax"
+ID: _
+STRING: "d\t%e"
+ID: w
+STRING: "xmm0"
+ID: f
+STRING: "unpcklbw\t"
+ID: _P
+STRING: "lw\t$0, "
+ID: _P
+STRING: "d\t$80, %xmm0, %xmm0"
+ID: _r
+STRING: "49(%rsp)"
+ID: _r
+STRING: "33(%rsp)"
+ID: _r
+STRING: "17(%rsp)"
+ID: _r
+STRING: "1(%rsp)"
+ID: G
+STRING: "LY"
+ID: _
+STRING: "b\t$63, %r8b"
+ID: _
+STRING: "absq\t$7378697629483820647, %r9"
+ID: g
+STRING: "si, %rcx\nLu"
+ID: W
+STRING: "%r"
+ID: _O
+ID: a
+STRING: "dx"
+ID: C
+ID: A
+STRING: "(%rdx,%rdx,4)"
+ID: C
+STRING: "mov"
+ID: a
+STRING: "cx"
+ID: z
+STRING: "sub"
+ID: a
+STRING: "dx"
+ID: z
+ID: _N
+STRING: "k\n\tnegl\t%eax\nLk"
+ID: n
+STRING: "b\t$"
+ID: _D
+STRING: "v"
+ID: D
+STRING: "55"
+ID: v
+ID: m
+STRING: "35, %al"
+ID: c
+STRING: "a\tLX\nLv"
+ID: _t
+ID: v
+ID: _
+STRING: "zbl\t%r8b, %r8d"
+ID: _
+STRING: "b\t%dl, 1"
+ID: j
+STRING: ",%r8)"
+ID: g
+ID: _O
+STRING: "q\t$9"
+ID: _h
+STRING: "decb\t%r8b"
+ID: h
+STRING: "q\t$19"
+ID: _h
+STRING: "mov"
+ID: a
+STRING: "dx"
+ID: _h
+STRING: "jae\tLu"
+ID: p
+STRING: "%r8d"
+ID: I
+STRING: "\n\tincb\t%al"
+ID: _
+STRING: "b\t%al, (%rsp)"
+ID: _g
+STRING: "B\nLY"
+ID: n
+STRING: "b\t$62, %r8b\nLB"
+ID: d
+ID: _N
+STRING: "G"
+ID: _
+STRING: "b\t%r8b, (%rsp)\nLG"
+ID: W
+STRING: "%rsp"
+ID: M
+STRING: "movl\t$65, %edx"
+ID: k
+STRING: "memcpy@PLT"
+ID: s
+STRING: "q\t$72, %rsp"
+ID: _f
+STRING: "X"
+ID: _l
+STRING: "s"
+ID: N
+STRING: "e\tLx, Ls-Lx"
+ID: _p
+STRING: "main,"
+ID: V
+STRING: "globl\tmain\n\t.type\tmain,"
+ID: P
+STRING: "main"
+ID: _z
+STRING: "15"
+ID: q
+STRING: "14"
+ID: q
+STRING: "13"
+ID: q
+STRING: "12"
+ID: q
+STRING: "bx\n\tsubq\t$168, %rsp"
+ID: p
+STRING: "$1024, %edi"
+ID: k
+STRING: "malloc@PLT"
+ID: y
+ID: w
+STRING: "rax"
+ID: c
+STRING: "e\tL4\n\t"
+ID: A
+STRING: "96"
+ID: j
+STRING: "), %rbx"
+ID: _
+STRING: "l\t$0, 32"
+ID: i
+ID: p
+STRING: "$1024, %ecx"
+ID: g
+STRING: "cx, (%rbx)"
+ID: g
+STRING: "cx, 8"
+ID: i
+ID: g
+STRING: "cx, 16"
+ID: i
+ID: g
+STRING: "ax, 24"
+ID: i
+ID: g
+ID: J
+STRING: "di"
+ID: k
+STRING: "Ln"
+ID: b
+STRING: "32"
+ID: i
+ID: _h
+STRING: "mov"
+ID: a
+STRING: "cx, 80"
+ID: j
+STRING: ")"
+ID: _
+STRING: "ups\t"
+ID: i
+STRING: ", %xmm0"
+ID: _
+STRING: "ups\t16"
+ID: i
+STRING: ", %xmm1"
+ID: _
+STRING: "aps\t%xmm1, 64"
+ID: j
+STRING: ")"
+ID: _
+STRING: "aps\t%xmm0, 48"
+ID: _b
+STRING: "w\t%ax, 88"
+ID: _b
+STRING: "l\t$1024, %edi"
+ID: k
+STRING: "malloc"
+ID: _M
+ID: G
+STRING: "L4\n\tmovl\t$1, 40"
+ID: j
+STRING: ")"
+ID: S
+STRING: "ebx, %ebx"
+ID: g
+STRING: "bx, 16"
+ID: _b
+STRING: "q\t$1024, 24"
+ID: _b
+ID: a
+STRING: "14, 32"
+ID: j
+STRING: ")"
+ID: _a
+STRING: "48"
+ID: E
+STRING: "di"
+ID: k
+STRING: "LL"
+ID: g
+STRING: "sp"
+ID: Y
+ID: b
+STRING: "%rbx, (%rbp)"
+ID: _a
+STRING: "96"
+ID: j
+STRING: "), %rbx"
+ID: _
+STRING: "q\t$10, "
+ID: i
+ID: b
+STRING: "$1, 8"
+ID: i
+ID: g
+STRING: "bp, 16"
+ID: i
+ID: g
+STRING: "ax, %rdi"
+ID: g
+STRING: "bx"
+ID: M
+STRING: "c"
+ID: B
+STRING: "LN"
+ID: b
+STRING: "8"
+ID: i
+ID: z
+STRING: "movq\t16"
+ID: i
+STRING: ", %r"
+ID: _K
+ID: b
+STRING: "(%rbp)"
+ID: r
+STRING: "3"
+ID: y
+STRING: "13"
+ID: r
+STRING: "3"
+ID: c
+STRING: "le\tLb"
+ID: h
+STRING: "q\t$9"
+ID: r
+STRING: "3"
+ID: p
+STRING: "$10, %edi"
+ID: e
+STRING: "movg"
+ID: a
+STRING: "13"
+ID: x
+ID: _y
+ID: x
+ID: y
+STRING: "di"
+ID: x
+ID: G
+STRING: "Lf"
+ID: k
+STRING: "malloc"
+ID: _M
+ID: __
+STRING: "D\nL4"
+ID: d
+STRING: "c"
+ID: B
+ID: _B
+ID: _g
+STRING: "l\nLb"
+ID: W
+STRING: "%r14, %rdi"
+ID: _g
+STRING: "l4\nLf"
+ID: d
+STRING: "xorl\t%r14d"
+ID: r
+STRING: "4d\nLD"
+ID: d
+ID: A
+STRING: "(,%r13,8)"
+ID: C
+STRING: "xorl\t%ebp, %ebp"
+ID: S
+STRING: "esi"
+ID: _q
+STRING: "14, %rdi"
+ID: k
+STRING: "memset@PLT"
+ID: _a
+STRING: "48"
+ID: E
+STRING: "15"
+ID: _a
+STRING: "96"
+ID: j
+STRING: ")"
+ID: r
+STRING: "2"
+ID: g
+STRING: "14, %rbx\nL"
+ID: W
+STRING: "%r15"
+ID: x
+ID: k
+STRING: "LL"
+ID: y
+ID: J
+STRING: "bx"
+ID: G
+STRING: "Ll\n\tinc"
+ID: a
+STRING: "bp"
+ID: b
+STRING: "$0, "
+ID: i
+ID: b
+STRING: "$10, 96"
+ID: j
+STRING: ")"
+ID: b
+STRING: "$1, 104"
+ID: _b
+ID: a
+STRING: "bx, 112"
+ID: _b
+ID: a
+ID: w
+STRING: "rdi"
+ID: g
+STRING: "12"
+ID: M
+STRING: "c"
+ID: B
+STRING: "LN"
+ID: b
+STRING: "104"
+ID: E
+STRING: "ax"
+ID: b
+STRING: "112"
+ID: E
+ID: _K
+ID: s
+STRING: "q\t$8, %rbx"
+ID: X
+STRING: "13, %r"
+ID: Z
+STRING: "jl\tL"
+ID: b
+STRING: "(%rsp)"
+ID: z
+STRING: "dec"
+ID: a
+STRING: "ax"
+ID: c
+STRING: "s\tL"
+ID: _J
+STRING: "add"
+ID: a
+STRING: "14, %rax"
+ID: c
+STRING: "e\tLl"
+ID: g
+STRING: "14, 8"
+ID: _b
+STRING: "q\t(%rax)"
+ID: M
+ID: A
+STRING: "96"
+ID: j
+STRING: ")"
+ID: r
+STRING: "5"
+ID: g
+STRING: "15"
+ID: x
+ID: k
+STRING: "Lx"
+ID: _a
+STRING: "16"
+ID: E
+STRING: "di"
+ID: g
+STRING: "15"
+ID: M
+STRING: "c"
+ID: B
+STRING: "LI"
+ID: b
+STRING: "(%rsp), %rbx"
+ID: h
+STRING: "q\t$2, %rbx"
+ID: c
+STRING: "l\tLC"
+ID: b
+STRING: "$-2"
+ID: Y
+ID: p
+STRING: "$1"
+ID: r
+STRING: "4d"
+ID: _a
+STRING: "16"
+ID: E
+STRING: "15"
+ID: _a
+STRING: "96"
+ID: j
+STRING: ")"
+ID: r
+STRING: "2\nL47"
+ID: n
+STRING: "l\t$32"
+ID: _q
+STRING: "15"
+ID: x
+ID: k
+STRING: "L0"
+ID: b
+STRING: "(%rsp)"
+ID: z
+STRING: "add"
+ID: a
+STRING: "bp, %rax"
+ID: c
+STRING: "s\tL"
+ID: _J
+STRING: "addq\t8"
+ID: E
+STRING: "ax"
+ID: G
+STRING: "Ll\n\tinc"
+ID: a
+STRING: "14"
+ID: b
+STRING: "(%rax)"
+ID: M
+STRING: "mov"
+ID: a
+STRING: "12"
+ID: x
+ID: k
+STRING: "Lx"
+ID: g
+STRING: "15"
+ID: x
+ID: g
+STRING: "12"
+ID: M
+STRING: "c"
+ID: B
+STRING: "LI\n\tdec"
+ID: a
+STRING: "bp"
+ID: X
+ID: J
+STRING: "14"
+ID: c
+STRING: "l\tL47\nLC"
+ID: d
+ID: A
+STRING: "16"
+ID: E
+STRING: "bx"
+ID: _
+STRING: "l\t$10, %esi"
+ID: g
+STRING: "bx"
+ID: x
+ID: k
+STRING: "L0"
+ID: b
+STRING: "8"
+ID: E
+ID: _o
+STRING: "free@PLT"
+ID: p
+STRING: "24"
+ID: i
+STRING: ", %edi"
+ID: b
+STRING: "(%rbx)"
+ID: C
+STRING: "movq\t16"
+ID: i
+STRING: ", %rbx"
+ID: _
+ID: a
+ID: J
+STRING: "si"
+ID: k
+STRING: "Li"
+ID: t
+STRING: "l\t%eax"
+ID: I
+ID: __
+STRING: "l"
+ID: y
+ID: J
+STRING: "bx"
+ID: G
+STRING: "L2"
+ID: g
+STRING: "bx"
+ID: x
+STRING: "\nLl4"
+ID: d
+STRING: "c"
+ID: B
+STRING: "free@PLT\nL2"
+ID: W
+STRING: "72"
+ID: E
+STRING: "di"
+ID: y
+STRING: "di"
+ID: x
+ID: G
+STRING: "Lc"
+ID: k
+STRING: "free@PLT\nLc"
+ID: d
+STRING: "addq\t$168, %rsp"
+ID: _c
+STRING: "2"
+ID: l
+STRING: "13"
+ID: l
+STRING: "14\n\tpop"
+ID: a
+STRING: "15"
+ID: l
+ID: Z
+ID: F
+STRING: "l"
+ID: _l
+STRING: "7"
+ID: N
+STRING: "e\tmain, L7-main"
+ID: _p
+STRING: "LL,"
+ID: V
+STRING: "type\tLL,"
+ID: P
+STRING: "LL"
+ID: _I
+ID: _H
+STRING: "d"
+ID: _
+STRING: "b\t41"
+ID: i
+STRING: ", %cl"
+ID: _
+STRING: "absq\t$4294983168, %r14\nLJ"
+ID: d
+STRING: "cmpb\t$32, %cl"
+ID: c
+STRING: "a\tLd"
+ID: _
+STRING: "zbl\t%cl"
+ID: I
+STRING: "\n\tbtq\t%r"
+ID: w
+STRING: "r14"
+ID: c
+STRING: "ae\tLd"
+ID: _
+ID: a
+ID: J
+ID: _o
+ID: _x
+ID: _d
+STRING: "ecx"
+ID: _v
+STRING: ", %ecx"
+ID: _w
+STRING: "e\tLJ\nLd"
+ID: W
+STRING: "%r"
+ID: J
+STRING: "ax"
+ID: s
+STRING: "q\t$8, %rsp"
+ID: _c
+STRING: "4"
+ID: _f
+STRING: "A"
+ID: N
+STRING: "e\tLL, LA-LL"
+ID: _p
+STRING: "LN,"
+ID: V
+STRING: "type\tLN,"
+ID: P
+STRING: "LN"
+ID: _I
+ID: g
+STRING: "si, %r14"
+ID: _H
+STRING: "H"
+ID: _
+STRING: "b\t41"
+ID: i
+STRING: ", %al"
+ID: m
+STRING: "45, %al"
+ID: __
+STRING: ".\n\tnegq\t8"
+ID: H
+ID: _G
+STRING: "H"
+ID: _v
+ID: I
+STRING: "\nL."
+ID: n
+STRING: "l\t%eax, %edx"
+ID: s
+STRING: "b\t$-48"
+ID: v
+ID: D
+STRING: "-48"
+ID: T
+STRING: "10"
+ID: v
+ID: c
+STRING: "b\tLZ"
+ID: _j
+ID: _F
+ID: v
+ID: c
+STRING: "b\tLZ"
+ID: _j
+ID: _E
+STRING: "H\nLZ"
+ID: _t
+ID: T
+STRING: "10, %cl"
+ID: c
+STRING: "ae\tLH\nLP"
+ID: n
+STRING: "zbl\t%al"
+ID: _q
+STRING: "14, %r"
+ID: _o
+STRING: "Lr"
+ID: _G
+STRING: "q"
+ID: _v
+ID: I
+ID: _j
+STRING: "48"
+ID: v
+ID: D
+STRING: "-48"
+ID: T
+STRING: "10"
+ID: v
+ID: c
+STRING: "b\tLM"
+ID: _j
+ID: _F
+ID: v
+ID: c
+STRING: "b\tLM"
+ID: _j
+ID: _E
+STRING: "q\nLM"
+ID: _t
+ID: T
+STRING: "9, %cl"
+ID: c
+STRING: "be\tLP\nLq"
+ID: d
+STRING: "addq\t$8, %rsp"
+ID: _c
+STRING: "4"
+ID: _f
+STRING: "H"
+ID: _l
+STRING: "a"
+ID: N
+STRING: "e\tLN, La-LN"
+ID: _p
+STRING: "LI,"
+ID: V
+STRING: "type\tLI,"
+ID: P
+STRING: "LI"
+ID: d
+ID: O
+STRING: "15"
+ID: q
+STRING: "14"
+ID: q
+STRING: "bx"
+ID: g
+STRING: "si, %r15"
+ID: g
+STRING: "di"
+ID: r
+STRING: "4"
+ID: _
+STRING: "zbl\t(%r15), %ebx"
+ID: _g
+STRING: "m\nLS"
+ID: n
+STRING: "zbl\t1(%r15,%rbx)"
+ID: _q
+STRING: "14, %r"
+ID: _o
+STRING: "L0\n\tinc"
+ID: a
+STRING: "bx\nLm"
+ID: d
+STRING: "cmpq\t$64, %rbx"
+ID: __
+STRING: "S"
+ID: _c
+STRING: "4"
+ID: l
+STRING: "15"
+ID: _f
+STRING: "3"
+ID: N
+STRING: "e\tLI, L3-LI"
+ID: _e
+STRING: "\t\"
+ID: text
+ID: Lr
+STRING: "_s"
+ID: Lr
+STRING: "P"
+ID: Lr
+STRING: "d"
+ID: cmpb
+ID: t
+NUMBER: 45
+ID: sil
+STRING: "__"
+ID: h
+ID: n
+ID: tnegq
+ID: t8
+LPAREN: (
+ID: rdi
+RPAREN: )
+STRING: "_f"
+ID: h
+STRING: "W"
+LPAREN: (
+ID: rdi
+RPAREN: )
+STRING: "_h"
+ID: movq
+ID: t16
+LPAREN: (
+ID: rdi
+RPAREN: )
+STRING: "x"
+ID: n
+ID: timulq
+ID: t
+LPAREN: (
+ID: rdi
+RPAREN: )
+STRING: "_h"
+ID: movl
+ID: t
+ID: esi
+STRING: "_n"
+ID: b
+ID: t
+MINUS: -
+NUMBER: 48
+ID: al
+STRING: "D"
+MINUS: -
+STRING: "_D"
+ID: Q
+STRING: "p"
+ID: esi
+STRING: "_n"
+ID: b
+ID: t
+MINUS: -
+NUMBER: 65
+ID: al
+STRING: "D"
+MINUS: -
+NUMBER: 55
+STRING: "v m"
+NUMBER: 26
+ID: al
+STRING: "c"
+ID: b
+ID: tLQ
+STRING: "p"
+ID: esi
+STRING: "_n"
+ID: b
+ID: t
+MINUS: -
+NUMBER: 97
+ID: al
+STRING: "D"
+MINUS: -
+NUMBER: 87
+STRING: "v m"
+NUMBER: 25
+ID: al
+STRING: "c"
+ID: a
+ID: tLU
+ID: nLQ
+STRING: "d"
+ID: addb
+ID: t
+ID: sil
+STRING: "v _"
+ID: zbl
+ID: t
+ID: dl
+STRING: "_n a"
+ID: cx
+ID: rax
+STRING: "g"
+ID: ax
+LPAREN: (
+ID: rdi
+RPAREN: )
+STRING: "_f"
+ID: U
+STRING: "_l"
+NUMBER: 6
+STRING: "N"
+ID: e
+ID: tLr
+ID: L6
+MINUS: -
+ID: Lr
+ID: n
+STRING: "_e"
+ID: t
+STRING: ".note.GNU-stack\"
+STRING: "\"
+ID: progbits
+ID: n
+RPAREN: )
+SEMI: ;

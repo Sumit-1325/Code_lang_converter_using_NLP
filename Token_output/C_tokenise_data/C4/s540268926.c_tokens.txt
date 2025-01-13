@@ -1,0 +1,248 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdint
+ID: h
+NEWLINE: 
+
+ID: include
+ID: inttypes
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: compare
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: intmax_t
+TIMES: *
+RPAREN: )
+ID: a
+MINUS: -
+TIMES: *
+LPAREN: (
+ID: intmax_t
+TIMES: *
+RPAREN: )
+ID: b
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: return
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: intmax_t
+TIMES: *
+RPAREN: )
+ID: a
+MINUS: -
+TIMES: *
+LPAREN: (
+ID: intmax_t
+TIMES: *
+RPAREN: )
+ID: b
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: return
+MINUS: -
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: intmax_t
+ID: N
+ID: A
+NUMBER: 200000
+ID: a
+NUMBER: 200000
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%jd"
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: size_t
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%jd"
+ID: A
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: a
+ID: i
+ID: A
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: qsort
+LPAREN: (
+ID: a
+ID: N
+ID: sizeof
+LPAREN: (
+ID: intmax_t
+RPAREN: )
+ID: compare
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: size_t
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+NUMBER: 0
+ID: A
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%jd\n"
+ID: a
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%jd\n"
+ID: a
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

@@ -1,0 +1,199 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: sum1
+NUMBER: 0
+ID: d1
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: sum2
+NUMBER: 0
+ID: d2
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: sum3
+NUMBER: 0
+ID: d3
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i1
+ID: i2
+ID: i3
+ID: j1
+ID: j2
+ID: j3
+ID: d1
+ID: d2
+ID: d3
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: i1
+ID: j1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: i2
+ID: j2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: i3
+ID: j3
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: sum1
+ID: i1
+PLUS: +
+ID: j1
+SEMI: ;
+NEWLINE: 
+
+ID: sum2
+ID: i2
+PLUS: +
+ID: j2
+SEMI: ;
+NEWLINE: 
+
+ID: sum3
+ID: i3
+PLUS: +
+ID: j3
+SEMI: ;
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: sum1
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: sum1
+DIVIDE: /
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+ID: d1
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: sum2
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: sum2
+DIVIDE: /
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+ID: d2
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: sum3
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: sum3
+DIVIDE: /
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+ID: d3
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: d1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: d2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: d3
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

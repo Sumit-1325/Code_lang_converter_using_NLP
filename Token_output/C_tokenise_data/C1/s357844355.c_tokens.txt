@@ -1,0 +1,160 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: errno
+ID: h
+NEWLINE: 
+
+
+ID: static
+ID: int
+NEWLINE: 
+
+ID: gcd
+LPAREN: (
+ID: int
+ID: m
+ID: int
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: tmp
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: m
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: tmp
+ID: m
+SEMI: ;
+NEWLINE: 
+
+ID: m
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: n
+ID: tmp
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+LPAREN: (
+ID: m
+ID: n
+RPAREN: )
+ID: gcd
+LPAREN: (
+ID: n
+ID: m
+ID: n
+RPAREN: )
+ID: n
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: int
+ID: argc
+ID: char
+TIMES: *
+TIMES: *
+ID: argv
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: m
+ID: n
+ID: ret
+SEMI: ;
+NEWLINE: 
+
+
+ID: ret
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: m
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: errno
+NUMBER: 0
+RPAREN: )
+ID: perror
+LPAREN: (
+STRING: "scanf: m, n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: ret
+NUMBER: 1
+RPAREN: )
+ID: exit
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: gcd
+LPAREN: (
+ID: m
+ID: n
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: exit
+LPAREN: (
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

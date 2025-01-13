@@ -1,0 +1,100 @@
+ID: include
+STRING: "stdio.h"
+NEWLINE: 
+
+
+ID: int
+ID: res
+SEMI: ;
+NEWLINE: 
+
+ID: long
+ID: int
+ID: W
+ID: H
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: S
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%ld %ld %ld %ld"
+ID: W
+ID: H
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: S
+LPAREN: (
+ID: double
+RPAREN: )
+LPAREN: (
+ID: W
+TIMES: *
+ID: H
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+ID: W
+DIVIDE: /
+NUMBER: 2
+ID: y
+ID: H
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: res
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: res
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf %d"
+ID: S
+ID: res
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

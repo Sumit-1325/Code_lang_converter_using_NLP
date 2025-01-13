@@ -1,0 +1,15 @@
+DIVIDE: /
+ID: home
+DIVIDE: /
+ID: student
+DIVIDE: /
+ID: s1250137
+DIVIDE: /
+ID: Algo
+DIVIDE: /
+ID: Ex01
+DIVIDE: /
+ID: ex1_B
+ID: c
+NEWLINE: 
+

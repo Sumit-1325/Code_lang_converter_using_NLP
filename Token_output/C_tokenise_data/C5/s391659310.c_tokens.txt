@@ -1,0 +1,144 @@
+ID: include
+STRING: "stdio.h"
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+ID: int
+ID: argc
+ID: char
+ID: const
+TIMES: *
+ID: argv
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: a
+ID: b
+ID: c
+ID: d
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d %d"
+ID: a
+ID: b
+ID: c
+ID: d
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f "
+LPAREN: (
+ID: a
+TIMES: *
+ID: b
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: flag
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+ID: c
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: flag
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: b
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+ID: d
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: flag
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: flag
+ID: flag
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: flag
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "0\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "1\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

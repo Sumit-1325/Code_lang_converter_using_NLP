@@ -1,0 +1,233 @@
+ID: include
+ID: iostream
+NEWLINE: 
+
+ID: include
+ID: cstdio
+NEWLINE: 
+
+ID: include
+ID: cstring
+NEWLINE: 
+
+ID: include
+ID: cstdlib
+NEWLINE: 
+
+ID: include
+ID: algorithm
+NEWLINE: 
+
+ID: include
+ID: queue
+NEWLINE: 
+
+ID: include
+ID: vector
+NEWLINE: 
+
+ID: include
+ID: stack
+NEWLINE: 
+
+ID: include
+ID: map
+NEWLINE: 
+
+ID: include
+ID: set
+NEWLINE: 
+
+ID: include
+ID: cmath
+NEWLINE: 
+
+ID: include
+ID: cctype
+NEWLINE: 
+
+ID: include
+ID: ctime
+NEWLINE: 
+
+ID: define
+ID: pi
+ID: acos
+LPAREN: (
+MINUS: -
+NUMBER: 1
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: using
+ID: namespace
+ID: std
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: string
+ID: a
+SEMI: ;
+NEWLINE: 
+
+ID: cin
+ID: a
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: len
+ID: a
+ID: length
+LPAREN: (
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: stack
+ID: char
+ID: q
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: len
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: q
+ID: push
+LPAREN: (
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: i
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: q
+ID: push
+LPAREN: (
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: i
+ID: B
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: q
+ID: size
+LPAREN: (
+RPAREN: )
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: q
+ID: pop
+LPAREN: (
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: q
+ID: size
+LPAREN: (
+RPAREN: )
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: cout
+ID: q
+ID: top
+LPAREN: (
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: q
+ID: pop
+LPAREN: (
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: cout
+ID: endl
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

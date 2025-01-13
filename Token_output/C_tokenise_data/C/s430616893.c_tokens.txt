@@ -1,0 +1,191 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: long
+ID: num
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: str
+NUMBER: 20
+ID: str1
+NUMBER: 200
+NUMBER: 15
+ID: str2
+NUMBER: 200
+NUMBER: 15
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: p
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+NUMBER: 200
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s %s"
+ID: str1
+ID: i
+ID: str2
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //gets(str1[i]);
+NEWLINE: 
+
+ID: if
+LPAREN: (
+TIMES: *
+ID: str1
+ID: i
+NUMBER: 0
+TIMES: *
+ID: str1
+ID: i
+ID: n
+RPAREN: )
+ID: break
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: num
+ID: atol
+LPAREN: (
+ID: str1
+ID: i
+RPAREN: )
+PLUS: +
+ID: atol
+LPAREN: (
+ID: str2
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //ltoa(num, str, 10);
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: //sprintf(num,"%ld",str1[i]);
+NEWLINE: 
+
+COMMENT: //sprintf(num,"%ld",str2[i]);
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: //printf("%ld\n", num);
+NEWLINE: 
+
+COMMENT: //printf("str %s\n", str);
+NEWLINE: 
+
+NEWLINE: 
+
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: p
+ID: str
+SEMI: ;
+NEWLINE: 
+
+ID: while
+LPAREN: (
+TIMES: *
+ID: p
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: p
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: count
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

@@ -1,0 +1,363 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: task_C
+LPAREN: (
+ID: const
+ID: unsigned
+ID: int
+TIMES: *
+ID: len_sequence
+ID: unsigned
+ID: int
+ID: val_sequence
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+COMMENT: // variables for this function
+NEWLINE: 
+
+ID: register
+ID: unsigned
+ID: int
+ID: maxval_1st
+SEMI: ;
+NEWLINE: 
+
+ID: register
+ID: unsigned
+ID: int
+ID: maxval_2nd
+SEMI: ;
+NEWLINE: 
+
+ID: register
+ID: unsigned
+ID: int
+ID: maxval_answer
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // support variables for this function
+NEWLINE: 
+
+ID: register
+ID: size_t
+ID: itr
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // STEP.01
+NEWLINE: 
+
+COMMENT: // initialize the variables to store the maximum values of given sequence
+NEWLINE: 
+
+ID: maxval_1st
+NUMBER: 0
+ID: U
+SEMI: ;
+NEWLINE: 
+
+ID: maxval_2nd
+NUMBER: 0
+ID: U
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // STEP.02
+NEWLINE: 
+
+COMMENT: // search the maximum values of given sequence
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: itr
+NUMBER: 0
+SEMI: ;
+ID: itr
+TIMES: *
+ID: len_sequence
+SEMI: ;
+ID: itr
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: maxval_1st
+ID: val_sequence
+ID: itr
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: maxval_2nd
+ID: maxval_1st
+SEMI: ;
+NEWLINE: 
+
+ID: maxval_1st
+ID: val_sequence
+ID: itr
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: maxval_2nd
+ID: val_sequence
+ID: itr
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: maxval_2nd
+ID: val_sequence
+ID: itr
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: continue
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: // STEP.03
+NEWLINE: 
+
+COMMENT: // output the answer of this task
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: itr
+NUMBER: 0
+SEMI: ;
+ID: itr
+TIMES: *
+ID: len_sequence
+SEMI: ;
+ID: itr
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: val_sequence
+ID: itr
+ID: maxval_1st
+RPAREN: )
+LBRACE: {
+ID: maxval_answer
+ID: maxval_1st
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+ID: maxval_answer
+ID: maxval_2nd
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: maxval_answer
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: // STEP.END
+NEWLINE: 
+
+ID: return
+ID: EXIT_SUCCESS
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: define
+ID: len_sequence_max
+NUMBER: 200000
+ID: U
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+COMMENT: // variables for main process
+NEWLINE: 
+
+ID: unsigned
+ID: int
+ID: N
+SEMI: ;
+NEWLINE: 
+
+ID: unsigned
+ID: int
+ID: A
+ID: len_sequence_max
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // support variables for main process
+NEWLINE: 
+
+ID: int
+ID: rtvl
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // STEP.01
+NEWLINE: 
+
+COMMENT: // read out the given data
+NEWLINE: 
+
+COMMENT: // (the length of the given sequence)
+NEWLINE: 
+
+ID: rtvl
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // STEP.02
+NEWLINE: 
+
+COMMENT: // read out the given data
+NEWLINE: 
+
+COMMENT: // (the values of the given sequence)
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: register
+ID: size_t
+ID: itr
+NUMBER: 0
+SEMI: ;
+ID: itr
+ID: N
+SEMI: ;
+ID: itr
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+ID: rtvl
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: A
+ID: itr
+RPAREN: )
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: // STEP.03
+NEWLINE: 
+
+COMMENT: // calculate & output the answer of the task
+NEWLINE: 
+
+ID: rtvl
+ID: task_C
+LPAREN: (
+ID: N
+ID: A
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // STEP.END
+NEWLINE: 
+
+ID: return
+ID: EXIT_SUCCESS
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

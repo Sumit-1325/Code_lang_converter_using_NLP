@@ -1,0 +1,105 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: x
+ID: y
+ID: w
+ID: h
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: s
+ID: w2
+ID: h2
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d %d %d"
+ID: w
+ID: h
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: w2
+LPAREN: (
+ID: double
+RPAREN: )
+ID: w
+SEMI: ;
+NEWLINE: 
+
+ID: h2
+LPAREN: (
+ID: double
+RPAREN: )
+ID: h
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+LPAREN: (
+ID: x
+ID: w2
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+LPAREN: (
+ID: y
+ID: h2
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: i
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: i
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%.6f %d"
+LPAREN: (
+ID: w2
+TIMES: *
+ID: h2
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+NUMBER: 0
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+RBRACE: }

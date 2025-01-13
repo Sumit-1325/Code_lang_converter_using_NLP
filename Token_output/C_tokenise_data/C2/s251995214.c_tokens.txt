@@ -1,0 +1,81 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+
+ID: const
+ID: double
+ID: PI
+NUMBER: 3
+NUMBER: 14159265359
+SEMI: ;
+NEWLINE: 
+
+ID: double
+ID: r
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: r
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%f %f\n"
+LPAREN: (
+ID: double
+RPAREN: )
+ID: r
+TIMES: *
+LPAREN: (
+ID: double
+RPAREN: )
+ID: r
+TIMES: *
+ID: PI
+LPAREN: (
+ID: double
+RPAREN: )
+ID: r
+TIMES: *
+NUMBER: 2
+ID: f
+TIMES: *
+ID: PI
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

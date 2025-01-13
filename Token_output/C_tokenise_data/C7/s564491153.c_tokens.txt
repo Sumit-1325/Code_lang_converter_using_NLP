@@ -1,0 +1,424 @@
+DIVIDE: /
+TIMES: *
+ID: ex
+NUMBER: 8
+ID: _1
+NEWLINE: 
+
+ID: unomi
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+
+COMMENT: //スタックに格納するデータの最大数
+NEWLINE: 
+
+ID: define
+ID: SIZE
+NUMBER: 1000
+NEWLINE: 
+
+
+COMMENT: //スタックの定義
+NEWLINE: 
+
+ID: typedef
+ID: struct
+ID: stack
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: size
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: data
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: top
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: stack
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: //スタックの初期化
+NEWLINE: 
+
+ID: void
+ID: initialize_stack
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: size
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+LPAREN: (
+ID: stk
+MINUS: -
+ID: data
+ID: SIZE
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: //データの追加
+NEWLINE: 
+
+ID: void
+ID: push
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+ID: char
+ID: elem
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: // スタックがオーバーフローしないなら
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: stk
+MINUS: -
+ID: count
+ID: stk
+MINUS: -
+ID: size
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+MINUS: -
+MINUS: -
+SEMI: ;
+COMMENT: //topを一つ上げる
+NEWLINE: 
+
+TIMES: *
+LPAREN: (
+ID: stk
+MINUS: -
+ID: top
+RPAREN: )
+ID: elem
+SEMI: ;
+COMMENT: // そこに代入
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+COMMENT: // データ数を増やす
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: //データの取り出し
+NEWLINE: 
+
+ID: char
+ID: pop
+LPAREN: (
+ID: stack
+TIMES: *
+ID: stk
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: latest
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // スタックがアンダーフローしないなら
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: stk
+MINUS: -
+ID: count
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: latest
+TIMES: *
+LPAREN: (
+ID: stk
+MINUS: -
+ID: top
+RPAREN: )
+SEMI: ;
+COMMENT: // topから取り出し
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: top
+PLUS: +
+PLUS: +
+SEMI: ;
+COMMENT: // topを一つ下げる
+NEWLINE: 
+
+ID: stk
+MINUS: -
+ID: count
+MINUS: -
+MINUS: -
+SEMI: ;
+COMMENT: // データ数を減らす
+NEWLINE: 
+
+ID: return
+ID: latest
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: // スタックの宣言
+NEWLINE: 
+
+ID: stack
+ID: stk
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: sentence
+NUMBER: 10
+ID: trush
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: ptr
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // スタックの初期化
+NEWLINE: 
+
+ID: initialize_stack
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // 入力の取得
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: sentence
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+COMMENT: // 入力を先頭から確認
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: strlen
+LPAREN: (
+ID: sentence
+RPAREN: )
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: // 入力が 0 or 1 ならスタックにプッシュ
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: sentence
+ID: i
+NUMBER: 0
+ID: sentence
+ID: i
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+ID: push
+LPAREN: (
+ID: stk
+ID: sentence
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // 入力が B ならスタックからポップ
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: trush
+ID: pop
+LPAREN: (
+ID: stk
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: // ポインタ変数にtopのアドレスを代入
+NEWLINE: 
+
+ID: ptr
+ID: stk
+ID: top
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // スタックのデータ数分スタックから表示
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: j
+NUMBER: 0
+SEMI: ;
+ID: j
+ID: stk
+ID: count
+SEMI: ;
+ID: j
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%c"
+TIMES: *
+ID: ptr
+PLUS: +
+PLUS: +
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

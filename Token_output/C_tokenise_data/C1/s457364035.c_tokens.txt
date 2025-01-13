@@ -1,0 +1,162 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: gcd
+LPAREN: (
+ID: int
+ID: i
+ID: int
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: gcd_num
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%d %d"
+ID: i
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: gcd_num
+ID: gcd
+LPAREN: (
+ID: i
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: gcd_num
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: gcd
+LPAREN: (
+ID: int
+ID: i
+ID: int
+ID: j
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: i
+NUMBER: 0
+ID: j
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: fprintf
+LPAREN: (
+ID: stderr
+STRING: "引数エラーです。\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+LPAREN: (
+ID: n
+ID: i
+ID: j
+RPAREN: )
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: i
+ID: j
+SEMI: ;
+NEWLINE: 
+
+ID: j
+ID: n
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+ID: j
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

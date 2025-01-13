@@ -1,0 +1,218 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: define
+ID: MAX_NUM
+NUMBER: 100
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+ID: sequence_num
+SEMI: ;
+NEWLINE: 
+
+ID: int
+TIMES: *
+ID: sequence
+TIMES: *
+ID: reverse
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: sequence_num
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: sequence
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: malloc
+LPAREN: (
+ID: sequence_num
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: reverse
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: malloc
+LPAREN: (
+ID: sequence_num
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: sequence_num
+ID: MAX_NUM
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: puts
+LPAREN: (
+STRING: "Array Number is Over."
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: sequence_num
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: sequence
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: reverse
+ID: sequence_num
+MINUS: -
+LPAREN: (
+ID: i
+PLUS: +
+NUMBER: 1
+RPAREN: )
+ID: sequence
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: sequence_num
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: reverse
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: i
+LPAREN: (
+ID: sequence_num
+MINUS: -
+NUMBER: 1
+RPAREN: )
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: putchar
+LPAREN: (
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: putchar
+LPAREN: (
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: free
+LPAREN: (
+ID: sequence
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: free
+LPAREN: (
+ID: reverse
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

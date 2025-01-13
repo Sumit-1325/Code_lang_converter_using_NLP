@@ -1,0 +1,195 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: long
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: long
+ID: a
+ID: b
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //long		tmp;
+NEWLINE: 
+
+ID: long
+ID: rmd
+SEMI: ;
+NEWLINE: 
+
+ID: long
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: long
+ID: rst
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%ld %ld"
+ID: a
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: x
+ID: a
+SEMI: ;
+NEWLINE: 
+
+ID: y
+ID: b
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: x
+ID: b
+SEMI: ;
+NEWLINE: 
+
+ID: y
+ID: a
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: rmd
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: rmd
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%ld"
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //printf("rmd=%ld\n",rmd);
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 1
+SEMI: ;
+ID: i
+ID: rmd
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+LPAREN: (
+LPAREN: (
+ID: y
+ID: i
+RPAREN: )
+NUMBER: 0
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: rmd
+ID: i
+RPAREN: )
+NUMBER: 0
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: rst
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%ld\n"
+ID: rst
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }

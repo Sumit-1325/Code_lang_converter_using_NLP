@@ -1,0 +1,398 @@
+DIVIDE: /
+TIMES: *
+NEWLINE: 
+
+ID: ex9_1
+NEWLINE: 
+
+ID: takaoga
+NEWLINE: 
+
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: define
+ID: SIZE
+NUMBER: 10
+NEWLINE: 
+
+ID: typedef
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: size
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: count
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: data
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: top
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: bottom
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: stack
+SEMI: ;
+NEWLINE: 
+
+
+ID: void
+ID: initialize_text
+LPAREN: (
+ID: stack
+TIMES: *
+ID: text
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: count
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: size
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: top
+LPAREN: (
+ID: text
+MINUS: -
+ID: data
+ID: SIZE
+RPAREN: )
+SEMI: ;
+COMMENT: //topはpushやpopをする毎に変動する。
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: bottom
+LPAREN: (
+ID: text
+MINUS: -
+ID: data
+ID: SIZE
+RPAREN: )
+SEMI: ;
+COMMENT: //data[10]を底と見なす。これは動かない。
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: push
+LPAREN: (
+ID: stack
+TIMES: *
+ID: text
+ID: char
+ID: textcharacter
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+TIMES: *
+LPAREN: (
+ID: text
+MINUS: -
+ID: top
+RPAREN: )
+ID: textcharacter
+SEMI: ;
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: top
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: count
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: pop
+LPAREN: (
+ID: stack
+TIMES: *
+ID: text
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: top
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: text
+MINUS: -
+ID: count
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: print_text
+LPAREN: (
+ID: stack
+TIMES: *
+ID: text
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: textbottom
+SEMI: ;
+NEWLINE: 
+
+ID: textbottom
+ID: text
+MINUS: -
+ID: bottom
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: text
+MINUS: -
+ID: count
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%c"
+TIMES: *
+ID: textbottom
+MINUS: -
+MINUS: -
+RPAREN: )
+SEMI: ;
+COMMENT: //botomから遡って出力することで、最初に入力した文字の順番で出力される
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "\n"
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: stack
+ID: text
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: inputtext
+NUMBER: 10
+TIMES: *
+ID: nowtext
+SEMI: ;
+NEWLINE: 
+
+ID: initialize_text
+LPAREN: (
+ID: text
+RPAREN: )
+SEMI: ;
+COMMENT: //初期化
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: inputtext
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: nowtext
+LPAREN: (
+ID: inputtext
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: while
+LPAREN: (
+TIMES: *
+ID: nowtext
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+TIMES: *
+ID: nowtext
+NUMBER: 0
+TIMES: *
+ID: nowtext
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: push
+LPAREN: (
+ID: text
+TIMES: *
+ID: nowtext
+RPAREN: )
+SEMI: ;
+COMMENT: //もし現在のもじが1か0であればpush
+NEWLINE: 
+
+RBRACE: }
+ID: else
+ID: if
+LPAREN: (
+TIMES: *
+ID: nowtext
+ID: B
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: text
+ID: top
+ID: text
+ID: bottom
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: pop
+LPAREN: (
+ID: text
+RPAREN: )
+SEMI: ;
+COMMENT: //もし現在の文字がBでありかつ文字列が空でなければpop
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: nowtext
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: print_text
+LPAREN: (
+ID: text
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+

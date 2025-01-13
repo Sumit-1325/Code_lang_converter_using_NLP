@@ -1,0 +1,450 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdbool
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+COMMENT: /* 値を入れ替える関数 */
+NEWLINE: 
+
+ID: void
+ID: swap
+LPAREN: (
+ID: int
+TIMES: *
+ID: x
+ID: int
+TIMES: *
+ID: y
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: temp
+SEMI: ;
+COMMENT: // 値を一時保存する変数
+NEWLINE: 
+
+NEWLINE: 
+
+ID: temp
+TIMES: *
+ID: x
+SEMI: ;
+NEWLINE: 
+
+TIMES: *
+ID: x
+TIMES: *
+ID: y
+SEMI: ;
+NEWLINE: 
+
+TIMES: *
+ID: y
+ID: temp
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+DIVIDE: /
+TIMES: *
+TIMES: *
+TIMES: *
+NEWLINE: 
+
+TIMES: *
+ID: pivot
+NEWLINE: 
+
+TIMES: *
+ID: pivot
+NEWLINE: 
+
+TIMES: *
+ID: pivot
+NEWLINE: 
+
+TIMES: *
+TIMES: *
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+ID: int
+ID: partition
+LPAREN: (
+ID: int
+ID: array
+ID: int
+ID: left
+ID: int
+ID: right
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+ID: pivot
+SEMI: ;
+NEWLINE: 
+
+ID: i
+ID: left
+SEMI: ;
+NEWLINE: 
+
+ID: j
+ID: right
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: pivot
+ID: left
+SEMI: ;
+COMMENT: // 先頭要素をpivotとする
+NEWLINE: 
+
+NEWLINE: 
+
+ID: do
+LBRACE: {
+NEWLINE: 
+
+ID: do
+LBRACE: {
+ID: i
+PLUS: +
+PLUS: +
+SEMI: ;
+RBRACE: }
+ID: while
+LPAREN: (
+ID: array
+ID: i
+ID: array
+ID: pivot
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: do
+LBRACE: {
+ID: j
+MINUS: -
+MINUS: -
+SEMI: ;
+RBRACE: }
+ID: while
+LPAREN: (
+ID: array
+ID: pivot
+ID: array
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: // pivotより小さいものを左へ、大きいものを右へ
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: i
+ID: j
+RPAREN: )
+LBRACE: {
+ID: swap
+LPAREN: (
+ID: array
+ID: i
+ID: array
+ID: j
+RPAREN: )
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+ID: while
+LPAREN: (
+ID: i
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: swap
+LPAREN: (
+ID: array
+ID: pivot
+ID: array
+ID: j
+RPAREN: )
+SEMI: ;
+COMMENT: //pivotを更新
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+ID: j
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: /* クイックソート */
+NEWLINE: 
+
+ID: void
+ID: quick_sort
+LPAREN: (
+ID: int
+ID: array
+ID: int
+ID: left
+ID: int
+ID: right
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: pivot
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: left
+ID: right
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: pivot
+ID: partition
+LPAREN: (
+ID: array
+ID: left
+ID: right
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: quick_sort
+LPAREN: (
+ID: array
+ID: left
+ID: pivot
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+COMMENT: // pivotを境に再帰的にクイックソート
+NEWLINE: 
+
+ID: quick_sort
+LPAREN: (
+ID: array
+ID: pivot
+PLUS: +
+NUMBER: 1
+ID: right
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+ID: j
+ID: k
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: N
+ID: A
+NUMBER: 200001
+ID: B
+NUMBER: 200001
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: A
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: B
+ID: i
+ID: A
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: quick_sort
+LPAREN: (
+ID: B
+NUMBER: 0
+ID: N
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: answer
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: B
+ID: N
+MINUS: -
+NUMBER: 1
+ID: A
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: B
+ID: N
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: B
+ID: N
+MINUS: -
+NUMBER: 2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

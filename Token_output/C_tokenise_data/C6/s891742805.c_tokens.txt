@@ -1,0 +1,161 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: replace
+LPAREN: (
+ID: int
+ID: number
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: number
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+
+
+ID: int
+ID: digit
+ID: number
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: digit
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+ID: digit
+NUMBER: 9
+SEMI: ;
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: digit
+NUMBER: 9
+RPAREN: )
+NEWLINE: 
+
+ID: digit
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+
+
+ID: return
+ID: replace
+LPAREN: (
+ID: number
+DIVIDE: /
+NUMBER: 10
+RPAREN: )
+TIMES: *
+NUMBER: 10
+PLUS: +
+ID: digit
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: Convert
+LPAREN: (
+ID: int
+ID: number
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: number
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: return
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: else
+NEWLINE: 
+
+ID: return
+ID: replace
+LPAREN: (
+ID: number
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: number
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: number
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: Convert
+LPAREN: (
+ID: number
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

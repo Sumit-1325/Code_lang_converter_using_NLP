@@ -1,0 +1,100 @@
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //変数の宣言
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: ans
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: //データの読み込み
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //	printf("nは%dです\n", n);
+NEWLINE: 
+
+COMMENT: //	printf("データの読み込み終了\n");
+NEWLINE: 
+
+COMMENT: //実際の処理
+NEWLINE: 
+
+NEWLINE: 
+
+ID: ans
+NUMBER: 1110
+MINUS: -
+ID: n
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: //	printf("計算部分終了\n");
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: //出力
+NEWLINE: 
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: ans
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+COMMENT: //	printf("結果の出力終了\n");
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+

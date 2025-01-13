@@ -1,0 +1,561 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdint
+ID: h
+NEWLINE: 
+
+ID: include
+ID: inttypes
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+ID: typedef
+ID: unsigned
+ID: long
+ID: long
+ID: int
+ID: uint64
+SEMI: ;
+NEWLINE: 
+
+ID: typedef
+ID: long
+ID: long
+ID: int
+ID: int64
+SEMI: ;
+NEWLINE: 
+
+
+ID: define
+ID: MIN
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: MAX
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+
+ID: define
+ID: SIZE
+LPAREN: (
+NUMBER: 200000
+RPAREN: )
+NEWLINE: 
+
+
+
+ID: void
+ID: get_N
+LPAREN: (
+ID: int64
+TIMES: *
+ID: n
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: cnt
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: cnt
+ID: scanf
+LPAREN: (
+STRING: "%lld"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: typedef
+ID: struct
+ID: _tmp_t
+LBRACE: {
+NEWLINE: 
+
+ID: int64
+ID: a
+SEMI: ;
+NEWLINE: 
+
+ID: int64
+ID: b
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: tmp_t
+SEMI: ;
+NEWLINE: 
+
+
+ID: tmp_t
+ID: A
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+ID: tmp_t
+ID: B
+ID: SIZE
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: compare_a
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: tmp_t
+TIMES: *
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: tmp_t
+TIMES: *
+ID: y
+SEMI: ;
+NEWLINE: 
+
+
+ID: x
+LPAREN: (
+ID: tmp_t
+TIMES: *
+RPAREN: )
+ID: a
+SEMI: ;
+NEWLINE: 
+
+ID: y
+LPAREN: (
+ID: tmp_t
+TIMES: *
+RPAREN: )
+ID: b
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: x
+MINUS: -
+ID: a
+ID: y
+MINUS: -
+ID: a
+RPAREN: )
+ID: return
+MINUS: -
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+MINUS: -
+ID: a
+ID: y
+MINUS: -
+ID: a
+RPAREN: )
+ID: return
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_b
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: tmp_t
+TIMES: *
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: tmp_t
+TIMES: *
+ID: y
+SEMI: ;
+NEWLINE: 
+
+
+ID: x
+LPAREN: (
+ID: tmp_t
+TIMES: *
+RPAREN: )
+ID: a
+SEMI: ;
+NEWLINE: 
+
+ID: y
+LPAREN: (
+ID: tmp_t
+TIMES: *
+RPAREN: )
+ID: b
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: x
+MINUS: -
+ID: b
+ID: y
+MINUS: -
+ID: b
+RPAREN: )
+ID: return
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: x
+MINUS: -
+ID: b
+ID: y
+MINUS: -
+ID: b
+RPAREN: )
+ID: return
+MINUS: -
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: qsort_a
+LPAREN: (
+ID: tmp_t
+TIMES: *
+ID: array
+ID: int
+ID: size
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: qsort
+LPAREN: (
+ID: array
+ID: size
+ID: sizeof
+LPAREN: (
+ID: tmp_t
+RPAREN: )
+ID: compare_a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: void
+ID: qsort_b
+LPAREN: (
+ID: tmp_t
+TIMES: *
+ID: array
+ID: int
+ID: size
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: qsort
+LPAREN: (
+ID: array
+ID: size
+ID: sizeof
+LPAREN: (
+ID: tmp_t
+RPAREN: )
+ID: compare_b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: cnt
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: int64
+ID: N
+SEMI: ;
+NEWLINE: 
+
+
+ID: get_N
+LPAREN: (
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: cnt
+ID: scanf
+LPAREN: (
+STRING: "%lld"
+ID: A
+ID: i
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: B
+ID: i
+ID: a
+ID: A
+ID: i
+ID: a
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: qsort_a
+LPAREN: (
+ID: B
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //    printf("A=%d B=%d\n", A[i].a, B[i].a);
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: A
+ID: i
+ID: a
+ID: B
+NUMBER: 0
+ID: a
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: B
+NUMBER: 1
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: B
+NUMBER: 0
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+

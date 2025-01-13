@@ -1,0 +1,1871 @@
+ID: include
+ID: stdbool
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: inttypes
+ID: h
+NEWLINE: 
+
+ID: include
+ID: ctype
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdint
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: wchar
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+ID: define
+ID: N_MAX
+LPAREN: (
+NUMBER: 100
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: P_MAX
+LPAREN: (
+NUMBER: 100
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: DP_ARRAY_SIZE
+LPAREN: (
+ID: N_MAX
+TIMES: *
+ID: P_MAX
+DIVIDE: /
+NUMBER: 32
+PLUS: +
+NUMBER: 1
+RPAREN: )
+NEWLINE: 
+
+
+ID: define
+ID: MIN
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: MAX
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: ABS
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+NUMBER: 0
+MINUS: -
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: ABSS
+LPAREN: (
+ID: a
+ID: b
+RPAREN: )
+LPAREN: (
+LPAREN: (
+ID: a
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: a
+RPAREN: )
+MINUS: -
+LPAREN: (
+ID: b
+RPAREN: )
+LPAREN: (
+ID: b
+RPAREN: )
+MINUS: -
+LPAREN: (
+ID: a
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+
+ID: int
+ID: compare_sz_asc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: size_t
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: size_t
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_sz_desc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: size_t
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: size_t
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_i64_asc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: int64_t
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: int64_t
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_i64_desc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: int64_t
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: int64_t
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_u64_asc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: uint64_t
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: uint64_t
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_u64_desc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: uint64_t
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: uint64_t
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_c_asc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: compare_c_desc
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: a
+RPAREN: )
+TIMES: *
+LPAREN: (
+LPAREN: (
+ID: char
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: size_t
+ID: powSz
+LPAREN: (
+ID: const
+ID: size_t
+ID: base
+ID: const
+ID: size_t
+ID: exp
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: exp
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: exp
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+ID: base
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: exp
+NUMBER: 2
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+ID: powSz
+LPAREN: (
+ID: base
+TIMES: *
+ID: base
+ID: exp
+DIVIDE: /
+NUMBER: 2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: return
+ID: base
+TIMES: *
+ID: powSz
+LPAREN: (
+ID: base
+ID: exp
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: size_t
+ID: comb
+LPAREN: (
+ID: const
+ID: size_t
+ID: n
+ID: const
+ID: size_t
+ID: r
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: size_t
+ID: result
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: size_t
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: r
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: result
+TIMES: *
+ID: n
+MINUS: -
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: result
+DIVIDE: /
+ID: i
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+ID: result
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: uint64_t
+ID: combU64
+LPAREN: (
+ID: const
+ID: uint64_t
+ID: n
+ID: const
+ID: uint64_t
+ID: r
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: uint64_t
+ID: result
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: uint64_t
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: r
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: result
+TIMES: *
+ID: n
+MINUS: -
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: result
+DIVIDE: /
+ID: i
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+ID: result
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: size_t
+ID: gcdZu
+LPAREN: (
+ID: size_t
+ID: m
+ID: size_t
+ID: n
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: size_t
+ID: temp
+SEMI: ;
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+ID: m
+ID: n
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: temp
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: n
+ID: m
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: m
+ID: temp
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+ID: n
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: uint64_t
+ID: gcdU64
+LPAREN: (
+ID: uint64_t
+ID: m
+ID: uint64_t
+ID: n
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: uint64_t
+ID: temp
+SEMI: ;
+NEWLINE: 
+
+
+ID: while
+LPAREN: (
+ID: m
+ID: n
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: temp
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: n
+ID: m
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: m
+ID: temp
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: return
+ID: n
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: typedef
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: uint64_t
+ID: A
+SEMI: ;
+NEWLINE: 
+
+ID: uint64_t
+ID: B
+SEMI: ;
+NEWLINE: 
+
+ID: uint64_t
+ID: val
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: _status
+SEMI: ;
+NEWLINE: 
+
+
+ID: static
+ID: _status
+ID: status
+NUMBER: 200000
+SEMI: ;
+NEWLINE: 
+
+
+ID: typedef
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: uint64_t
+ID: idx
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: BHeap_Val
+SEMI: ;
+NEWLINE: 
+
+
+ID: define
+ID: BHEAP_VAL_TYPE
+ID: BHeap_Val
+NEWLINE: 
+
+
+ID: static
+ID: int
+ID: _bHeap_Compare
+LPAREN: (
+ID: const
+ID: BHEAP_VAL_TYPE
+TIMES: *
+ID: parent
+ID: const
+ID: BHEAP_VAL_TYPE
+TIMES: *
+ID: node
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: const
+ID: uint64_t
+ID: parentVal
+ID: status
+ID: parent
+MINUS: -
+ID: idx
+ID: val
+SEMI: ;
+NEWLINE: 
+
+ID: const
+ID: uint64_t
+ID: nodeVal
+ID: status
+ID: node
+MINUS: -
+ID: idx
+ID: val
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+ID: parentVal
+ID: nodeVal
+MINUS: -
+NUMBER: 1
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: define
+ID: BHEAP_INVALID_NODE
+LPAREN: (
+LPAREN: (
+ID: size_t
+RPAREN: )
+NUMBER: 100000000
+RPAREN: )
+NEWLINE: 
+
+
+ID: typedef
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: BHEAP_VAL_TYPE
+ID: val
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: BHeap_Node
+SEMI: ;
+NEWLINE: 
+
+
+ID: static
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: size_t
+ID: size
+SEMI: ;
+NEWLINE: 
+
+ID: int
+LPAREN: (
+TIMES: *
+ID: compare
+RPAREN: )
+LPAREN: (
+ID: const
+ID: BHEAP_VAL_TYPE
+TIMES: *
+ID: parent
+ID: const
+ID: BHEAP_VAL_TYPE
+TIMES: *
+ID: node
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: bHeap_Info
+SEMI: ;
+NEWLINE: 
+
+ID: static
+ID: BHeap_Node
+ID: bHeap_Node
+NUMBER: 1
+NUMBER: 20
+SEMI: ;
+NEWLINE: 
+
+
+ID: static
+ID: void
+ID: bHeap_Init
+LPAREN: (
+ID: int
+LPAREN: (
+TIMES: *
+ID: compare
+RPAREN: )
+LPAREN: (
+ID: const
+ID: BHEAP_VAL_TYPE
+TIMES: *
+ID: parent
+ID: const
+ID: BHEAP_VAL_TYPE
+TIMES: *
+ID: node
+RPAREN: )
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: bHeap_Info
+ID: size
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: bHeap_Info
+ID: compare
+ID: compare
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: void
+ID: bHeap_UpHeap
+LPAREN: (
+ID: const
+ID: size_t
+ID: nodeIdx
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: nodeIdx
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: const
+ID: size_t
+ID: parentIdx
+LPAREN: (
+ID: nodeIdx
+PLUS: +
+NUMBER: 1
+RPAREN: )
+DIVIDE: /
+NUMBER: 2
+MINUS: -
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+ID: const
+ID: int
+ID: compareResult
+ID: bHeap_Info
+ID: compare
+LPAREN: (
+LPAREN: (
+ID: bHeap_Node
+ID: parentIdx
+ID: val
+RPAREN: )
+LPAREN: (
+ID: bHeap_Node
+ID: nodeIdx
+ID: val
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+NUMBER: 0
+ID: compareResult
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: const
+ID: BHEAP_VAL_TYPE
+ID: tmp
+ID: bHeap_Node
+ID: parentIdx
+ID: val
+SEMI: ;
+NEWLINE: 
+
+ID: bHeap_Node
+ID: parentIdx
+ID: val
+ID: bHeap_Node
+ID: nodeIdx
+ID: val
+SEMI: ;
+NEWLINE: 
+
+ID: bHeap_Node
+ID: nodeIdx
+ID: val
+ID: tmp
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: parentIdx
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: bHeap_UpHeap
+LPAREN: (
+ID: parentIdx
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: void
+ID: bHeap_DownHeap
+LPAREN: (
+ID: const
+ID: size_t
+ID: nodeIdx
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: bHeap_Info
+ID: size
+MINUS: -
+NUMBER: 1
+ID: nodeIdx
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: const
+ID: size_t
+ID: leftIdx
+NUMBER: 2
+TIMES: *
+LPAREN: (
+ID: nodeIdx
+PLUS: +
+NUMBER: 1
+RPAREN: )
+MINUS: -
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: leftIdx
+ID: bHeap_Info
+ID: size
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: const
+ID: int
+ID: leftResult
+ID: bHeap_Info
+ID: compare
+LPAREN: (
+LPAREN: (
+ID: bHeap_Node
+ID: nodeIdx
+ID: val
+RPAREN: )
+LPAREN: (
+ID: bHeap_Node
+ID: leftIdx
+ID: val
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: size_t
+ID: swapTarget
+ID: leftResult
+NUMBER: 0
+ID: BHEAP_INVALID_NODE
+ID: leftIdx
+SEMI: ;
+NEWLINE: 
+
+
+ID: const
+ID: size_t
+ID: rightIdx
+ID: leftIdx
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: rightIdx
+ID: bHeap_Info
+ID: size
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: const
+ID: int
+ID: rightResult
+ID: bHeap_Info
+ID: compare
+LPAREN: (
+LPAREN: (
+ID: bHeap_Node
+ID: nodeIdx
+ID: val
+RPAREN: )
+LPAREN: (
+ID: bHeap_Node
+ID: rightIdx
+ID: val
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: swapTarget
+ID: BHEAP_INVALID_NODE
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+NUMBER: 0
+ID: rightResult
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: swapTarget
+ID: rightIdx
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+NUMBER: 0
+ID: rightResult
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: const
+ID: int
+ID: rightLeftResult
+ID: bHeap_Info
+ID: compare
+LPAREN: (
+LPAREN: (
+ID: bHeap_Node
+ID: leftIdx
+ID: val
+RPAREN: )
+LPAREN: (
+ID: bHeap_Node
+ID: rightIdx
+ID: val
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+NUMBER: 0
+ID: rightLeftResult
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: swapTarget
+ID: rightIdx
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: swapTarget
+ID: BHEAP_INVALID_NODE
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: const
+ID: BHEAP_VAL_TYPE
+ID: tmp
+ID: bHeap_Node
+ID: nodeIdx
+ID: val
+SEMI: ;
+NEWLINE: 
+
+ID: bHeap_Node
+ID: nodeIdx
+ID: val
+ID: bHeap_Node
+ID: swapTarget
+ID: val
+SEMI: ;
+NEWLINE: 
+
+ID: bHeap_Node
+ID: swapTarget
+ID: val
+ID: tmp
+SEMI: ;
+NEWLINE: 
+
+
+ID: bHeap_DownHeap
+LPAREN: (
+ID: swapTarget
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: void
+ID: bHeap_Add
+LPAREN: (
+ID: const
+ID: BHEAP_VAL_TYPE
+ID: val
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: bHeap_Node
+ID: bHeap_Info
+ID: size
+ID: val
+ID: val
+SEMI: ;
+NEWLINE: 
+
+
+ID: bHeap_Info
+ID: size
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+
+ID: bHeap_UpHeap
+LPAREN: (
+ID: bHeap_Info
+ID: size
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: void
+ID: bHeap_RemoveTop
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: bHeap_Info
+ID: size
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: bHeap_Info
+ID: size
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: bHeap_Info
+ID: size
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+ID: return
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: bHeap_Node
+NUMBER: 0
+ID: val
+ID: bHeap_Node
+ID: bHeap_Info
+ID: size
+MINUS: -
+NUMBER: 1
+ID: val
+SEMI: ;
+NEWLINE: 
+
+
+ID: bHeap_Info
+ID: size
+MINUS: -
+MINUS: -
+SEMI: ;
+NEWLINE: 
+
+
+ID: bHeap_DownHeap
+LPAREN: (
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: BHEAP_VAL_TYPE
+TIMES: *
+ID: bHeap_GetTopVal
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+ID: bHeap_Info
+ID: size
+NUMBER: 0
+ID: NULL
+LPAREN: (
+ID: bHeap_Node
+NUMBER: 0
+ID: val
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: typedef
+ID: struct
+LBRACE: {
+NEWLINE: 
+
+ID: uint64_t
+ID: cnt
+SEMI: ;
+NEWLINE: 
+
+ID: size_t
+TIMES: *
+ID: child
+SEMI: ;
+NEWLINE: 
+
+ID: size_t
+ID: numChild
+SEMI: ;
+NEWLINE: 
+
+ID: size_t
+ID: maxNumChild
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: Tree_Node
+SEMI: ;
+NEWLINE: 
+
+
+ID: define
+ID: TREE_INIT_ALLOC
+LPAREN: (
+NUMBER: 128
+RPAREN: )
+NEWLINE: 
+
+
+ID: static
+ID: Tree_Node
+ID: tree_Node
+NUMBER: 200000
+SEMI: ;
+NEWLINE: 
+
+
+ID: static
+ID: void
+ID: tree_Init
+LPAREN: (
+ID: const
+ID: uint64_t
+ID: N
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: uint64_t
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: N
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: tree_Node
+ID: i
+ID: cnt
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: tree_Node
+ID: i
+ID: numChild
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: tree_Node
+ID: i
+ID: child
+ID: malloc
+LPAREN: (
+ID: sizeof
+LPAREN: (
+ID: size_t
+RPAREN: )
+TIMES: *
+ID: TREE_INIT_ALLOC
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: tree_Node
+ID: i
+ID: maxNumChild
+ID: TREE_INIT_ALLOC
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: static
+ID: void
+ID: tree_AddChild
+LPAREN: (
+ID: const
+ID: size_t
+ID: parent
+ID: const
+ID: size_t
+ID: child
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: tree_Node
+ID: parent
+ID: maxNumChild
+ID: tree_Node
+ID: parent
+ID: numChild
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: tree_Node
+ID: parent
+ID: child
+ID: realloc
+LPAREN: (
+ID: tree_Node
+ID: parent
+ID: child
+ID: sizeof
+LPAREN: (
+ID: size_t
+RPAREN: )
+TIMES: *
+ID: tree_Node
+ID: parent
+ID: maxNumChild
+TIMES: *
+NUMBER: 2
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: tree_Node
+ID: parent
+ID: maxNumChild
+TIMES: *
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: tree_Node
+ID: parent
+ID: child
+ID: tree_Node
+ID: parent
+ID: numChild
+ID: child
+SEMI: ;
+NEWLINE: 
+
+ID: tree_Node
+ID: parent
+ID: numChild
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: n
+NUMBER: 4
+SEMI: ;
+NEWLINE: 
+
+
+ID: scanf
+LPAREN: (
+STRING: "%s"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: size_t
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+NUMBER: 3
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: n
+ID: i
+ID: n
+ID: i
+NUMBER: 1
+NUMBER: 9
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: puts
+LPAREN: (
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

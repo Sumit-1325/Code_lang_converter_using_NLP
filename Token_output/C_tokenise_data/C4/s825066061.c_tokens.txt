@@ -1,0 +1,226 @@
+DIVIDE: /
+TIMES: *
+NEWLINE: 
+
+ID: submission
+MINUS: -
+ID: User
+ID: herp_sy
+NEWLINE: 
+
+ID: https
+COMMENT: //atcoder.jp/contests/
+NEWLINE: 
+
+TIMES: *
+DIVIDE: /
+NEWLINE: 
+
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdbool
+ID: h
+NEWLINE: 
+
+
+ID: define
+ID: _CRT_SECURE_NO_WARNINGS
+NEWLINE: 
+
+ID: define
+ID: TLong
+ID: long
+ID: long
+NEWLINE: 
+
+ID: define
+ID: TBMod
+NUMBER: 1000000007
+NEWLINE: 
+
+
+ID: int
+ID: DESC
+LPAREN: (
+ID: const
+ID: int
+TIMES: *
+ID: a
+ID: const
+ID: int
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: return
+LPAREN: (
+TIMES: *
+ID: b
+MINUS: -
+TIMES: *
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: int
+ID: argc
+ID: char
+ID: const
+TIMES: *
+ID: argv
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+ID: a
+NUMBER: 200003
+ID: b
+NUMBER: 200003
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+PLUS: +
+PLUS: +
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: a
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: b
+ID: i
+ID: a
+ID: i
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: qsort
+LPAREN: (
+ID: b
+ID: n
+ID: sizeof
+LPAREN: (
+ID: int
+RPAREN: )
+ID: DESC
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+PLUS: +
+PLUS: +
+ID: i
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+ID: b
+NUMBER: 0
+RPAREN: )
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: b
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: else
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: b
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

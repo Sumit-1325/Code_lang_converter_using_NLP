@@ -1,0 +1,60 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: a
+ID: b
+ID: c
+ID: ans
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: a
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: b
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: c
+ID: a
+PLUS: +
+ID: b
+SEMI: ;
+NEWLINE: 
+
+
+ID: ans
+LPAREN: (
+ID: int
+RPAREN: )
+ID: log10
+LPAREN: (
+ID: c
+RPAREN: )
+PLUS: +
+NUMBER: 1
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: ans
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

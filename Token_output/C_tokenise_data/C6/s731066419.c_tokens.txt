@@ -1,0 +1,68 @@
+ID: include
+ID: cstdio
+NEWLINE: 
+
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: N
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: N
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: int
+ID: i
+ID: N
+DIVIDE: /
+NUMBER: 111
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: N
+NUMBER: 111
+NUMBER: 0
+RPAREN: )
+PLUS: +
+PLUS: +
+ID: i
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: i
+TIMES: *
+NUMBER: 111
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

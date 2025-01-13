@@ -1,0 +1,152 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: int
+ID: argv
+ID: char
+TIMES: *
+ID: argc
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+NEWLINE: 
+
+ID: int
+ID: num
+SEMI: ;
+NEWLINE: 
+
+ID: int
+TIMES: *
+ID: array
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: x
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d\n"
+ID: num
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: array
+ID: malloc
+LPAREN: (
+ID: sizeof
+LPAREN: (
+ID: int
+RPAREN: )
+TIMES: *
+ID: num
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: x
+ID: num
+SEMI: ;
+NUMBER: 0
+ID: x
+SEMI: ;
+ID: x
+MINUS: -
+MINUS: -
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: array
+ID: x
+MINUS: -
+NUMBER: 1
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: x
+NUMBER: 0
+SEMI: ;
+ID: num
+MINUS: -
+NUMBER: 1
+ID: x
+SEMI: ;
+ID: x
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d "
+ID: array
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d"
+ID: array
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: free
+LPAREN: (
+ID: array
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

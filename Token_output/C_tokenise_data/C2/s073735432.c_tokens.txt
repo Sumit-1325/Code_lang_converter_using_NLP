@@ -1,0 +1,64 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: double
+ID: i
+ID: s
+ID: x
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: r
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: s
+NUMBER: 3
+NUMBER: 141592653589
+TIMES: *
+ID: r
+TIMES: *
+ID: r
+SEMI: ;
+NEWLINE: 
+
+ID: x
+NUMBER: 2
+TIMES: *
+NUMBER: 3
+NUMBER: 141592653589
+TIMES: *
+ID: r
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%.8lf %.8lf\n"
+ID: s
+ID: x
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

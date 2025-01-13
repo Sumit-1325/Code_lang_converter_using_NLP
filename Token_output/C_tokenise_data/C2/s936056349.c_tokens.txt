@@ -1,0 +1,111 @@
+ID: define
+ID: dbg
+LPAREN: (
+ID: fmt
+RPAREN: )
+ID: fprintf
+LPAREN: (
+ID: stderr
+ID: fmt
+ID: __VA_ARGS__
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: dpri
+LPAREN: (
+ID: x
+RPAREN: )
+ID: dbg
+LPAREN: (
+ID: x
+STRING: ": %d\n"
+ID: x
+RPAREN: )
+NEWLINE: 
+
+ID: define
+ID: dprs
+LPAREN: (
+ID: x
+RPAREN: )
+ID: dbg
+LPAREN: (
+ID: x
+STRING: ": %s\n"
+ID: x
+RPAREN: )
+NEWLINE: 
+
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+ID: const
+ID: int
+ID: INF
+NUMBER: 1
+ID: e9
+PLUS: +
+NUMBER: 7
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: int
+ID: argc
+ID: char
+TIMES: *
+TIMES: *
+ID: argv
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: double
+ID: r
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%lf"
+ID: r
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%f %f\n"
+ID: M_PI
+TIMES: *
+ID: r
+TIMES: *
+ID: r
+NUMBER: 2
+TIMES: *
+ID: M_PI
+TIMES: *
+ID: r
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

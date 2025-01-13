@@ -1,0 +1,213 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: char
+ID: str
+NUMBER: 15
+SEMI: ;
+NEWLINE: 
+
+ID: char
+TIMES: *
+ID: token
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: val_a
+ID: val_b
+ID: cnt
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: cnt
+NUMBER: 0
+SEMI: ;
+ID: cnt
+NUMBER: 200
+SEMI: ;
+ID: cnt
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: fgets
+LPAREN: (
+ID: str
+ID: sizeof
+LPAREN: (
+ID: str
+RPAREN: )
+ID: stdin
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+LPAREN: (
+ID: strcmp
+LPAREN: (
+ID: str
+STRING: "\n"
+RPAREN: )
+RPAREN: )
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: break
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: token
+ID: strtok
+LPAREN: (
+ID: str
+STRING: " "
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: token
+ID: NULL
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: val_a
+ID: atoi
+LPAREN: (
+ID: token
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: token
+ID: strtok
+LPAREN: (
+ID: NULL
+STRING: " "
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: val_b
+ID: atoi
+LPAREN: (
+ID: token
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: val_a
+NUMBER: 0
+ID: val_b
+NUMBER: 1000000
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: sum
+ID: val_a
+PLUS: +
+ID: val_b
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: spcnt
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+ID: while
+LPAREN: (
+ID: sum
+NUMBER: 0
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: sum
+DIVIDE: /
+NUMBER: 10
+SEMI: ;
+NEWLINE: 
+
+ID: spcnt
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: spcnt
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: break
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

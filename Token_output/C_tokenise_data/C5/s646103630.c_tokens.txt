@@ -1,0 +1,88 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+ID: define
+ID: df
+NUMBER: 0
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: w
+ID: h
+ID: x
+ID: y
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d%d%d%d"
+ID: w
+ID: h
+ID: x
+ID: y
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%lf %d"
+ID: w
+TIMES: *
+ID: h
+TIMES: *
+NUMBER: 1
+NUMBER: 0
+DIVIDE: /
+NUMBER: 2
+LPAREN: (
+ID: w
+NUMBER: 2
+NUMBER: 0
+ID: h
+NUMBER: 2
+NUMBER: 0
+ID: w
+DIVIDE: /
+NUMBER: 2
+ID: x
+ID: h
+DIVIDE: /
+NUMBER: 2
+ID: y
+RPAREN: )
+NUMBER: 1
+NUMBER: 0
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+COMMENT: ///  confirm df==0  ///
+NEWLINE: 
+

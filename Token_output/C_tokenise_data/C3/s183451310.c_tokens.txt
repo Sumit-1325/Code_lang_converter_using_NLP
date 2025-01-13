@@ -1,0 +1,135 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+RPAREN: )
+NEWLINE: 
+
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: i
+SEMI: ;
+NEWLINE: 
+
+ID: char
+ID: num
+NUMBER: 2
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: fgets
+LPAREN: (
+ID: num
+NUMBER: 2
+ID: stdin
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: n
+ID: atoi
+LPAREN: (
+LPAREN: (
+ID: num
+NUMBER: 0
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+NEWLINE: 
+
+ID: char
+ID: str
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: fgets
+LPAREN: (
+ID: str
+ID: n
+ID: stdin
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+PLUS: +
+PLUS: +
+ID: i
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: i
+ID: n
+MINUS: -
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: str
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: printf
+LPAREN: (
+STRING: "%d "
+ID: str
+ID: n
+MINUS: -
+NUMBER: 1
+MINUS: -
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: return
+NUMBER: 0
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

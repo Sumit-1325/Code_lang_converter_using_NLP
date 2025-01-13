@@ -1,0 +1,380 @@
+ID: include
+ID: stdio
+ID: h
+NEWLINE: 
+
+ID: include
+ID: stdlib
+ID: h
+NEWLINE: 
+
+ID: include
+ID: string
+ID: h
+NEWLINE: 
+
+ID: include
+ID: math
+ID: h
+NEWLINE: 
+
+
+
+ID: int
+ID: cmp
+LPAREN: (
+ID: const
+ID: void
+TIMES: *
+ID: a
+ID: const
+ID: void
+TIMES: *
+ID: b
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: a
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+LBRACE: {
+ID: return
+NUMBER: 1
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: a
+TIMES: *
+LPAREN: (
+ID: int
+TIMES: *
+RPAREN: )
+ID: b
+RPAREN: )
+LBRACE: {
+ID: return
+MINUS: -
+NUMBER: 1
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+ID: return
+NUMBER: 0
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: int
+ID: aa
+NUMBER: 200005
+SEMI: ;
+NEWLINE: 
+
+
+ID: int
+ID: main
+LPAREN: (
+ID: void
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: int
+ID: n
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: a
+NUMBER: 200005
+SEMI: ;
+NEWLINE: 
+
+ID: int
+ID: max
+MINUS: -
+NUMBER: 100
+ID: max2
+MINUS: -
+NUMBER: 101
+SEMI: ;
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: n
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: scanf
+LPAREN: (
+STRING: "%d"
+ID: a
+ID: i
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+ID: memcpy
+LPAREN: (
+ID: aa
+ID: a
+ID: sizeof
+LPAREN: (
+ID: a
+RPAREN: )
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+
+ID: qsort
+LPAREN: (
+ID: aa
+ID: n
+ID: sizeof
+LPAREN: (
+ID: int
+RPAREN: )
+ID: cmp
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+COMMENT: //配列の最大値と2番目に大きい最大値を求める
+NEWLINE: 
+
+COMMENT: //ただし配列の最大値が複数存在するとき、max2=maxとする。
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: max
+ID: aa
+ID: i
+RPAREN: )
+LBRACE: {
+ID: max
+ID: aa
+ID: i
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: if
+LPAREN: (
+ID: aa
+NUMBER: 0
+ID: aa
+NUMBER: 1
+RPAREN: )
+LBRACE: {
+ID: max2
+ID: max
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: else
+LBRACE: {
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: aa
+ID: i
+ID: max
+RPAREN: )
+LBRACE: {
+ID: continue
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: max2
+ID: aa
+ID: i
+RPAREN: )
+LBRACE: {
+ID: max2
+ID: aa
+ID: i
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+
+ID: for
+LPAREN: (
+ID: int
+ID: i
+NUMBER: 0
+SEMI: ;
+ID: i
+ID: n
+SEMI: ;
+ID: i
+PLUS: +
+PLUS: +
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+COMMENT: //除外した配列が最大値かつ最大値が配列に1つしかないとき
+NEWLINE: 
+
+ID: if
+LPAREN: (
+ID: a
+ID: i
+ID: max
+ID: max
+ID: max2
+RPAREN: )
+LBRACE: {
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max2
+RPAREN: )
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //除外した配列が最大値かつ最大値が配列に複数あるとき
+NEWLINE: 
+
+ID: else
+ID: if
+LPAREN: (
+ID: a
+ID: i
+ID: max
+ID: max
+ID: max2
+RPAREN: )
+LBRACE: {
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max2
+RPAREN: )
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+COMMENT: //外した配列が最大値じゃないとき
+NEWLINE: 
+
+ID: else
+LBRACE: {
+ID: printf
+LPAREN: (
+STRING: "%d\n"
+ID: max
+RPAREN: )
+SEMI: ;
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+
+RBRACE: }
+NEWLINE: 
+

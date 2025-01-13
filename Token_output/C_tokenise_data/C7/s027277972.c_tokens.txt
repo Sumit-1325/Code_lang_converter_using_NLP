@@ -1,0 +1,63 @@
+ID: char
+ID: s
+NUMBER: 99
+SEMI: ;
+ID: c
+ID: i
+ID: j
+NUMBER: 80
+SEMI: ;
+NEWLINE: 
+
+ID: main
+LPAREN: (
+RPAREN: )
+LBRACE: {
+NEWLINE: 
+
+ID: for
+LPAREN: (
+ID: i
+ID: strlen
+LPAREN: (
+ID: gets
+LPAREN: (
+ID: s
+RPAREN: )
+RPAREN: )
+SEMI: ;
+ID: i
+MINUS: -
+MINUS: -
+SEMI: ;
+RPAREN: )
+ID: s
+ID: i
+MINUS: -
+NUMBER: 66
+ID: c
+ID: s
+MINUS: -
+MINUS: -
+ID: j
+ID: s
+ID: i
+ID: c
+MINUS: -
+MINUS: -
+ID: c
+PLUS: +
+PLUS: +
+SEMI: ;
+NEWLINE: 
+
+ID: puts
+LPAREN: (
+ID: s
+PLUS: +
+ID: j
+RPAREN: )
+SEMI: ;
+NEWLINE: 
+
+RBRACE: }

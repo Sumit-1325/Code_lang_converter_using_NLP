@@ -1,0 +1,55 @@
+ID: N
+ID: int
+LPAREN: (
+ID: input
+LPAREN: (
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: s
+ID: int
+LPAREN: (
+ID: input
+LPAREN: (
+RPAREN: )
+RPAREN: )
+ID: for
+ID: i
+ID: in
+ID: range
+LPAREN: (
+ID: N
+RPAREN: )
+NEWLINE: 
+
+ID: for
+ID: k
+ID: in
+ID: s
+NEWLINE: 
+
+ID: m
+ID: s
+ID: pop
+LPAREN: (
+NUMBER: 0
+RPAREN: )
+NEWLINE: 
+
+ID: print
+LPAREN: (
+ID: max
+LPAREN: (
+ID: s
+RPAREN: )
+RPAREN: )
+NEWLINE: 
+
+ID: s
+ID: append
+LPAREN: (
+ID: m
+RPAREN: )
+NEWLINE: 
+
