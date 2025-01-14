@@ -1,0 +1,18 @@
+N (Token.Name)
+= (Token.Operator)
+int (Token.Keyword.Type)
+( (Token.Punctuation)
+input (Token.Name)
+( (Token.Punctuation)
+) (Token.Punctuation)
+) (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+print (Token.Name)
+( (Token.Punctuation)
+1110 (Token.Literal.Number.Integer)
+- (Token.Operator)
+N (Token.Name)
+) (Token.Punctuation)
+
+ (Token.Text.Whitespace)

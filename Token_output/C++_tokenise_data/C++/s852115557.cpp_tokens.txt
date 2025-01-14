@@ -1,0 +1,15 @@
+5 (Token.Literal.Number.Integer)
+  (Token.Text.Whitespace)
+7 (Token.Literal.Number.Integer)
+
+ (Token.Text.Whitespace)
+1 (Token.Literal.Number.Integer)
+  (Token.Text.Whitespace)
+99 (Token.Literal.Number.Integer)
+
+ (Token.Text.Whitespace)
+1000 (Token.Literal.Number.Integer)
+  (Token.Text.Whitespace)
+999 (Token.Literal.Number.Integer)
+
+ (Token.Text.Whitespace)

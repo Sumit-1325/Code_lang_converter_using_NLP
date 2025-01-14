@@ -1,0 +1,745 @@
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<vector> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<map> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<set> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<cmath> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<iostream> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<algorithm> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<queue> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<iomanip> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<list> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+include (Token.Comment.Preproc)
+  (Token.Text.Whitespace)
+<string> (Token.Comment.PreprocFile)
+
+ (Token.Comment.Preproc)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+char (Token.Keyword.Type)
+                 (Token.Text.Whitespace)
+SINT8 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+unsigned (Token.Keyword.Type)
+  (Token.Text.Whitespace)
+char (Token.Keyword.Type)
+        (Token.Text.Whitespace)
+UINT8 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+short (Token.Keyword.Type)
+                (Token.Text.Whitespace)
+SINT16 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+unsigned (Token.Keyword.Type)
+  (Token.Text.Whitespace)
+short (Token.Keyword.Type)
+       (Token.Text.Whitespace)
+UINT16 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+int (Token.Keyword.Type)
+                  (Token.Text.Whitespace)
+SINT32 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+unsigned (Token.Keyword.Type)
+  (Token.Text.Whitespace)
+int (Token.Keyword.Type)
+         (Token.Text.Whitespace)
+UINT32 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+long (Token.Keyword.Type)
+  (Token.Text.Whitespace)
+long (Token.Keyword.Type)
+            (Token.Text.Whitespace)
+SINT64 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+unsigned (Token.Keyword.Type)
+  (Token.Text.Whitespace)
+long (Token.Keyword.Type)
+  (Token.Text.Whitespace)
+long (Token.Keyword.Type)
+   (Token.Text.Whitespace)
+UINT64 (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+typedef (Token.Keyword)
+  (Token.Text.Whitespace)
+double (Token.Keyword.Type)
+               (Token.Text.Whitespace)
+DOUBLE (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+# (Token.Comment.Preproc)
+define MAX(a,b) ((a)>(b)?(a):(b)) (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define MIN(a,b) ((a)<(b)?(a):(b)) (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define ABS(a) ((a)>(0)?(a):-(a)) (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define rep(i,a,b) for(int (i)=int(a);(i)<int(b);(i)++) (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define rrep(i,a,b) for(int (i)=int(a);(i)>=int(b);(i)--) (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+
+ (Token.Text.Whitespace)
+# (Token.Comment.Preproc)
+define put(a) cout << (a) << endl (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define puts(a) cout << (a) << " " (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define pute(a) cout << endl (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+# (Token.Comment.Preproc)
+define INF 1000000001 (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define MOD 1000000007 (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define INF64 1000000000000000001 (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+
+ (Token.Text.Whitespace)
+# (Token.Comment.Preproc)
+define F first (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define S second (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+
+ (Token.Text.Whitespace)
+# (Token.Comment.Preproc)
+define Pii  pair<SINT32,SINT32> (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define Pll  pair<SINT64,SINT64> (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define Piii pair<SINT32,pair<SINT32,SINT32>> (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define Plll pair<SINT64,pair<SINT64,SINT64>> (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+
+ (Token.Text.Whitespace)
+# (Token.Comment.Preproc)
+define Vll(a,b,c)    vector<vector<SINT64>> (a)((b),vector<SINT64>((c)) (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+# (Token.Comment.Preproc)
+define Vlll(a,b,c,d) vector<vector<vector<SINT64>>> (a)((b),vector<vector<SINT64>>((c),vector<SINT64>((d))) (Token.Comment.Preproc)
+
+ (Token.Comment.Preproc)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+using (Token.Keyword)
+  (Token.Text.Whitespace)
+namespace (Token.Keyword)
+  (Token.Text.Whitespace)
+std (Token.Name.Namespace)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+int (Token.Keyword.Type)
+  (Token.Text.Whitespace)
+main (Token.Name.Function)
+( (Token.Punctuation)
+) (Token.Punctuation)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+string (Token.Name)
+  (Token.Text.Whitespace)
+s (Token.Name)
+; (Token.Punctuation)
+	 (Token.Text.Whitespace)
+cin (Token.Name)
+  (Token.Text.Whitespace)
+> (Token.Operator)
+> (Token.Operator)
+  (Token.Text.Whitespace)
+s (Token.Name)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+vector (Token.Name)
+< (Token.Operator)
+SINT64 (Token.Name)
+> (Token.Operator)
+  (Token.Text.Whitespace)
+data (Token.Name)
+( (Token.Punctuation)
+s (Token.Name)
+. (Token.Punctuation)
+size (Token.Name)
+( (Token.Punctuation)
+) (Token.Punctuation)
+) (Token.Punctuation)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+rep (Token.Name)
+( (Token.Punctuation)
+i (Token.Name)
+, (Token.Punctuation)
+0 (Token.Literal.Number.Integer)
+, (Token.Punctuation)
+s (Token.Name)
+. (Token.Punctuation)
+size (Token.Name)
+( (Token.Punctuation)
+) (Token.Punctuation)
+) (Token.Punctuation)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+		 (Token.Text.Whitespace)
+if (Token.Keyword)
+( (Token.Punctuation)
+s (Token.Name)
+[ (Token.Punctuation)
+i (Token.Name)
+] (Token.Punctuation)
+  (Token.Text.Whitespace)
+= (Token.Operator)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+' (Token.Literal.String.Char)
+B (Token.Literal.String.Char)
+' (Token.Literal.String.Char)
+) (Token.Punctuation)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+			 (Token.Text.Whitespace)
+SINT64 (Token.Name)
+  (Token.Text.Whitespace)
+buf (Token.Name)
+  (Token.Text.Whitespace)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+i (Token.Name)
+-1 (Token.Literal.Number.Integer)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+			 (Token.Text.Whitespace)
+while (Token.Keyword)
+( (Token.Punctuation)
+buf (Token.Name)
+  (Token.Text.Whitespace)
+> (Token.Operator)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+0 (Token.Literal.Number.Integer)
+) (Token.Punctuation)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+				 (Token.Text.Whitespace)
+if (Token.Keyword)
+  (Token.Text.Whitespace)
+( (Token.Punctuation)
+data (Token.Name)
+[ (Token.Punctuation)
+buf (Token.Name)
+] (Token.Punctuation)
+  (Token.Text.Whitespace)
+! (Token.Operator)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+-1 (Token.Literal.Number.Integer)
+) (Token.Punctuation)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+					 (Token.Text.Whitespace)
+data (Token.Name)
+[ (Token.Punctuation)
+buf (Token.Name)
+] (Token.Punctuation)
+  (Token.Text.Whitespace)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+-1 (Token.Literal.Number.Integer)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+					 (Token.Text.Whitespace)
+break (Token.Keyword)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+				 (Token.Text.Whitespace)
+} (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+				 (Token.Text.Whitespace)
+buf (Token.Name)
+- (Token.Operator)
+- (Token.Operator)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+			 (Token.Text.Whitespace)
+} (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+			 (Token.Text.Whitespace)
+data (Token.Name)
+[ (Token.Punctuation)
+i (Token.Name)
+] (Token.Punctuation)
+  (Token.Text.Whitespace)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+-1 (Token.Literal.Number.Integer)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+		 (Token.Text.Whitespace)
+} (Token.Punctuation)
+  (Token.Text.Whitespace)
+else (Token.Keyword)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+			 (Token.Text.Whitespace)
+data (Token.Name)
+[ (Token.Punctuation)
+i (Token.Name)
+] (Token.Punctuation)
+  (Token.Text.Whitespace)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+s (Token.Name)
+[ (Token.Punctuation)
+i (Token.Name)
+] (Token.Punctuation)
+  (Token.Text.Whitespace)
+- (Token.Operator)
+  (Token.Text.Whitespace)
+' (Token.Literal.String.Char)
+0 (Token.Literal.String.Char)
+' (Token.Literal.String.Char)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+		 (Token.Text.Whitespace)
+} (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+		 (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+} (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+rep (Token.Name)
+( (Token.Punctuation)
+i (Token.Name)
+, (Token.Punctuation)
+0 (Token.Literal.Number.Integer)
+, (Token.Punctuation)
+s (Token.Name)
+. (Token.Punctuation)
+size (Token.Name)
+( (Token.Punctuation)
+) (Token.Punctuation)
+) (Token.Punctuation)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+		 (Token.Text.Whitespace)
+if (Token.Keyword)
+  (Token.Text.Whitespace)
+( (Token.Punctuation)
+data (Token.Name)
+[ (Token.Punctuation)
+i (Token.Name)
+] (Token.Punctuation)
+  (Token.Text.Whitespace)
+! (Token.Operator)
+= (Token.Operator)
+  (Token.Text.Whitespace)
+-1 (Token.Literal.Number.Integer)
+) (Token.Punctuation)
+  (Token.Text.Whitespace)
+{ (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+			 (Token.Text.Whitespace)
+cout (Token.Name)
+  (Token.Text.Whitespace)
+< (Token.Operator)
+< (Token.Operator)
+  (Token.Text.Whitespace)
+data (Token.Name)
+[ (Token.Punctuation)
+i (Token.Name)
+] (Token.Punctuation)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+		 (Token.Text.Whitespace)
+} (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+} (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+	 (Token.Text.Whitespace)
+return (Token.Keyword)
+  (Token.Text.Whitespace)
+0 (Token.Literal.Number.Integer)
+; (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+} (Token.Punctuation)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+//	vector<vector<SINT64>> data(N,vector<SINT32>(3));										//2次元配列
+ (Token.Comment.Single)
+//	vector<vector<vector<SINT64>>> data(N,vector<vector<SINT64>>(3,vector<SINT64>(3)));		//3次元配列
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+//	Vll(data,N,N);		//2次元配列
+ (Token.Comment.Single)
+//	Vlll(data,N,N,N);	//3次元配列
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+//	sort(data.begin(),data.end());
+ (Token.Comment.Single)
+//	sort(data.begin(),data.end(),std::greater<SINT64>());
+ (Token.Comment.Single)
+//	__gcd(A,B);
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+//	data.emplace_back(BUF);			//後ろに追加
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+//  data.erase(std::unique(data.begin(), data.end()), data.end());	//ソート後に使用 同じ値を消す
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+//	data.insert(data.begin() + X, 0);	//X番目の要素に0を挿入
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+//	隣接リスト
+ (Token.Comment.Single)
+//	vector<vector<SINT64>> data(N);
+ (Token.Comment.Single)
+//	data[ A ].emplace_back( B );
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/*
+	vector<Pll> data(N);
+	rep(i,0,N) {
+		cin >> data[i].F;
+		cin >> data[i].S;
+	}
+	sort(data.begin(),data.end());
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/*
+	vector<Plll> data(N);
+	rep(i,0,N) {
+		cin >> data[i].F;
+		cin >> data[i].S.F;
+		cin >> data[i].S.S;
+	}
+	sort(data.begin(),data.end());
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+// posi = lower_bound(data.begin(),data.end(), X) - data.begin();				// X以上を探す
+ (Token.Comment.Single)
+// posi = lower_bound(data.begin(),data.end(),make_pair(X,0)) - data.begin();	//pair
+ (Token.Comment.Single)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/* 文字列回転
+	string N;
+	cin >> N;
+	N = N[N.length()-1] + N.substr(0,N.length()-1);
+
+
+	s = to_string(i);	//ストリング変換
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+/* 文字列合成
+	string N,M;
+	cin >> N >> M;
+	SINT64 ans = 0;
+	ans = stoi(N+M);
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/*
+//ワーシャルフロイド
+vector<vector<SINT32>> dist(N,vector<SINT32>(N));
+rep(i,0,N) {
+	rep(j,0,N) {
+		if (i != j) {
+			dist[i][j] = INF;
+		}
+	}
+}
+rep(k,0,N) {
+	rep(i,0,N) {
+		rep(j,0,N) {
+			dist[i][j] = MIN(dist[i][j], dist[i][k]+dist[k][j]);
+		}
+	}
+}
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/*  優先度付きキュー
+	priority_queue<SINT64, vector<SINT64>, greater<SINT64>> data;	//小さいほうから取り出せる
+	priority_queue<SINT64, vector<SINT64>> data;					//大きいほうから取り出せる
+
+	data.push(X);	//X を挿入
+	data.top();		//先頭データ読み
+	data.pop();		//先頭データ削除
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/* SET コンテナ
+	set<SINT64> data;
+	data.insert(X);				//X を挿入
+	data.erase(data.begin());	//先頭を削除
+	data.erase(--data.end());	//末尾を削除
+	*data.begin();				//先頭要素にアクセス
+	*data.rbegin();				//末尾要素にアクセス
+
+	//全表示
+    set<SINT64>::iterator it; //イテレータを用意
+    for(it = data.begin(); it != data.end(); it++) {
+        cout << *it << " ";
+    }
+	cout << endl;
+
+	//N番目を一部表示
+	set<SINT64>::iterator it; //  イテレータを用意
+	it = data.begin();
+	rep (i,0,N) {
+		it++;
+	}
+	cout << *it << endl;
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/* map
+	map<string,SINT32> mp;
+	SINT32 N = 0;
+	SINT32 mx = 0;
+
+	cin >> N;
+	for (SINT32 i = 0; i < N; i++) {
+		string s;
+		cin >> s;
+		mp[s]++;
+	}
+	for(auto it=mp.begin();it!=mp.end();it++) {
+		mx=max(mx,it->second);
+	}
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+/*
+	//順列全表示
+	//sortしてからでないと全列挙にならない
+	sort(data.begin(),data.end());
+	do {
+		cout << buf << endl;
+		rep(i,0,R) {
+			cout << data[i] << " ";
+		}
+		cout << endl;
+
+    } while (next_permutation(data.begin(),data.end()));
+*/ (Token.Comment.Multiline)
+
+ (Token.Text.Whitespace)
+
+ (Token.Text.Whitespace)
+//  桁指定表示
+ (Token.Comment.Single)
+//  ans = ans * M_PI;
+ (Token.Comment.Single)
+//	cout << setprecision(15) << ans << endl;
+ (Token.Comment.Single)
