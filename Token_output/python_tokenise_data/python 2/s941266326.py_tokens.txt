@@ -1,0 +1,2 @@
+import (Token.Keyword.Namespace)
+math (Token.Name.Namespace)
