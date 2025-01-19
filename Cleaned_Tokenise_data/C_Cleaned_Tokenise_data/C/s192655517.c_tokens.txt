@@ -1,0 +1,1 @@
+ID: int ID: main LPAREN: ( RPAREN: ) LBRACE: { NEWLINE: ID: int ID: a ID: b SEMI: ; NEWLINE: ID: while LPAREN: ( ID: scanf LPAREN: ( STRING: "%d%d" ID: a ID: b RPAREN: ) RPAREN: ) LBRACE: { NEWLINE: ID: printf LPAREN: ( STRING: "%d\n" ID: a PLUS: + ID: b RPAREN: ) SEMI: ; NEWLINE: RBRACE: } NEWLINE: ID: return NUMBER: 0 SEMI: ; NEWLINE: RBRACE: }

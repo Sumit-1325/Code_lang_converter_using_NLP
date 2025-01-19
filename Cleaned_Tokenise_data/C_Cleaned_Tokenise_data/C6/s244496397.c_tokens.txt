@@ -1,0 +1,1 @@
+ID: n SEMI: ; ID: main LPAREN: ( RPAREN: ) LBRACE: { ID: printf LPAREN: ( STRING: "%d" NUMBER: 1110 MINUS: - ID: atoi LPAREN: ( ID: gets LPAREN: ( ID: n RPAREN: ) RPAREN: ) RPAREN: ) SEMI: ; RBRACE: }

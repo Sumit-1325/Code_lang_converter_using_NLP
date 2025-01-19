@@ -1,0 +1,1 @@
+ID: include ID: stdio ID: h NEWLINE: ID: int ID: main LPAREN: ( RPAREN: ) NEWLINE: LBRACE: { NEWLINE: RBRACE: }

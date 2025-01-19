@@ -1,0 +1,1 @@
+ID: include ID: math ID: h NEWLINE: ID: int ID: main LPAREN: ( RPAREN: ) LBRACE: { NEWLINE: ID: double ID: r SEMI: ; NEWLINE: ID: scanf LPAREN: ( STRING: "%lf" ID: r RPAREN: ) SEMI: ; NEWLINE: ID: printf LPAREN: ( STRING: "%lf %lf\n" ID: r TIMES: * ID: r TIMES: * ID: M_PI NUMBER: 2 TIMES: * ID: r TIMES: * ID: M_PI RPAREN: ) SEMI: ; NEWLINE: RBRACE: } NEWLINE:

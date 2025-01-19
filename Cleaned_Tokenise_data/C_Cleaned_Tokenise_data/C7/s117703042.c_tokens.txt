@@ -1,0 +1,1 @@
+ID: char ID: s SEMI: ; ID: i SEMI: ; ID: main LPAREN: ( ID: a RPAREN: ) LBRACE: { ID: for LPAREN: ( SEMI: ; LPAREN: ( ID: a ID: getchar LPAREN: ( RPAREN: ) RPAREN: ) SEMI: ; RPAREN: ) ID: a MINUS: - NUMBER: 66 ID: s ID: i PLUS: + PLUS: + ID: a ID: i NUMBER: 0 ID: s MINUS: - MINUS: - ID: i NUMBER: 0 NUMBER: 0 SEMI: ; ID: puts LPAREN: ( ID: s RPAREN: ) SEMI: ; RBRACE: }

@@ -1,0 +1,1 @@
+ID: a SEMI: ; ID: main LPAREN: ( ID: b RPAREN: ) LBRACE: { ID: for LPAREN: ( SEMI: ; ID: scanf LPAREN: ( STRING: "%d%d" ID: a ID: b RPAREN: ) TIMES: * ID: a SEMI: ; ID: printf LPAREN: ( STRING: "%.0f\n" ID: log10 LPAREN: ( ID: a PLUS: + ID: b RPAREN: ) PLUS: + NUMBER: 1 MINUS: - NUMBER: 1 ID: e MINUS: - NUMBER: 7 RPAREN: ) RPAREN: ) SEMI: ; RBRACE: }

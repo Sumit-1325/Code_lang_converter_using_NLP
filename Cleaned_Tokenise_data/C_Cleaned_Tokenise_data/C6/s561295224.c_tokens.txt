@@ -1,0 +1,1 @@
+ID: include ID: stdio ID: h NEWLINE: ID: int ID: main LPAREN: ( ID: void RPAREN: ) LBRACE: { NEWLINE: ID: int ID: a SEMI: ; NEWLINE: ID: scanf LPAREN: ( STRING: "%d" ID: a RPAREN: ) SEMI: ; NEWLINE: ID: printf LPAREN: ( STRING: "%d" NUMBER: 1 NUMBER: 9 NUMBER: 9 NUMBER: 1 RPAREN: ) NEWLINE: ID: return NUMBER: 0 SEMI: ; NEWLINE: RBRACE: }
